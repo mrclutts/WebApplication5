@@ -200,12 +200,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\alabamashakes_soundandcolor.png" />
     <Content Include="img\anco_paintingwith.jpg" />
     <Content Include="img\angle1.png" />
     <Content Include="img\budget2.png" />
     <Content Include="img\computer12.png" />
     <Content Include="img\downloads-bg.jpg" />
     <Content Include="img\fleetfoxes_helplessnessblues.jpg" />
+    <Content Include="img\grizzlybear_shields.png" />
     <Content Include="img\html9.png" />
     <Content Include="img\intro-bg.jpg" />
     <Content Include="img\map-marker.png" />
@@ -214,6 +216,8 @@
     <Content Include="img\Placeholder 150x150.png" />
     <None Include="Views\Home\index.cshtml" />
     <Content Include="img\soccer19.png" />
+    <Content Include="img\sufjanstevens_carrieandlowell.jpg" />
+    <Content Include="img\warondrugslostinthedream.png" />
     <Content Include="img\web2.png" />
     <Content Include="index.html" />
     <Content Include="js\bootstrap.js" />
