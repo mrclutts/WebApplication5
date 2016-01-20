@@ -115,7 +115,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255,255,255,.5);
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -135,7 +135,7 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid rgba(255,255,255,.5);
         background: #000;
     }
 }
@@ -186,7 +186,7 @@ a:focus {
 .btn-circle {
     width: 70px;
     height: 70px;
-    margin-top: 15px;
+    margin-top: 100px;
     padding: 7px 16px;
     border: 2px solid #fff;
     border-radius: 100%!important;
@@ -259,6 +259,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
+    width:100%;
 }
 
 .download-section {
@@ -273,24 +274,18 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
+        padding-bottom: 100px;
     }
 
     .download-section {
         padding: 100px 0;
     }
 
-    #map {
-        height: 400px;
-        margin-top: 250px;
+   
     }
 }
 
@@ -354,6 +349,7 @@ footer p {
     background: rgba(255,255,255,.2);
 }
 
+
 ::selection {
     text-shadow: none;
     background: #fcfcfc;
@@ -373,8 +369,114 @@ body {
 }
 .jscalc {
     color: #000;
+    background-color: rgba(255,255,255,.2);
 }
-.jscalc {
-    text-align: center;
+    .jscalc h1 {
+        text-align: center;
+    }
+    /*About*/
+#about {
+    padding-top: 150px;
 
 }
+
+    /*Skills*/
+#skills .col-md-3, col-xs-3 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#skills {
+   background-color: rgba(255,255,255,.5);
+   width:100%;
+   padding-top: 150px;
+}
+.skilllist {
+    list-style-type: none;
+    text-align:left;
+    
+}
+.skilllist li {
+    font-size: 18px;
+    padding-right: 1px;
+}
+.skillitems {
+ 
+    display: inline-block;
+    text-align: left;
+ 
+}
+.skillitems li {
+    background-image: url('../img/angle1.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    list-style-type: none;
+    padding: 10px 0 10px 40px;
+    font-size:16px;
+}
+
+#skills img {
+    height: 50px;
+    width: 50px;
+    padding-right: 5px;
+}
+
+     /*Portfolio*/
+
+
+    /*What I'm Listening To*/
+
+#music .imgmusic {
+    padding: 0;
+    margin: 0;
+    height: 275px;
+    width: 275px;
+    position: relative;
+    
+}
+
+.artistinfo span {
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.artistinfo {
+  text-align: center;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  display: table;
+  height: 275px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 290px;
+  padding-left: 15px;
+  padding-right: 2px;
+  opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+#music a:hover .artistinfo {
+  opacity: 1;
+ }
+#music .row {
+    padding: 40px 0;
+} 
+#music .col-md-12, col-xs-12 {
+    padding-bottom: 40px;
+}
+
+/*Contact*/
+ #contact {
+
+ }
+ #contact .btn {
+     margin-top: 50px;
+     padding: 10px 20px;
+     font-size: 16px;
+ }
