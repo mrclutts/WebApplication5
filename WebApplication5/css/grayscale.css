@@ -446,6 +446,15 @@ body {
 #portfolio .col-xs-12 {
      padding-bottom: 40px;
  }
+#portfolio img {
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+}
+
+
+
+
 
     /*What I'm Listening To*/
 
@@ -512,3 +521,35 @@ body {
      padding: 10px 20px;
      font-size: 16px;
  }
+ /* Modals */
+ #modals .modal-content {
+     background-color: #7F7F7F;
+ }
+ #modals .modal-body {
+     margin: 0 auto;
+      
+ }
+ #modals .inputbtn {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #000000;
+    text-align:center;
+    padding: 5px 12px;
+    margin: 5px 15px 5px 0;
+}
+
+#modals .inputbtn:hover,
+.inputbtn:focus {
+    border: 1px solid #ffffff;
+    outline: 0;
+    color: #000;
+    background-color: #ffffff;
+}
+#modals .userinput {
+    color: #000000;
+    width: 350px;
+    
+}
+#modals .userinput .placeholder {
+    color: #000000;
+}
