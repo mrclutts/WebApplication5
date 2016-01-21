@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <title>Welcome!</title>
+    <title>Matt Clutts, Web Developer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +30,7 @@
     <![endif]-->
     <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
     <link href="Content/SyntaxHighlighter/shThemeDefault.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/web2.png" >
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -180,14 +181,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xs-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>Portfolio (coming soon!)</h2>
                     <hr />
                 </div>
             </div>
             <!---Modals--->
             <div class="col-md-3 col-xs-12 portfolio-item">
                 <a href="" data-toggle="modal" data-target="#modal1">
-                    <img src="img/Placeholder 150x150.png" />
+                    <img src="img/Placeholder 150x150.png" />    
                 </a>
             </div>
 
@@ -195,7 +196,7 @@
             <!---Modal 2-->
             <div class="col-md-3 col-xs-12 portfolio-item">
                 <a href="" data-toggle="modal" data-target="#modal2">
-                    <img src="img/Placeholder 150x150.png" />
+                    <img src="img/Placeholder 150x150.png" />        
                 </a>
             </div>
 
@@ -208,7 +209,7 @@
             <!--Modal 4-->
             <div class="col-md-3 col-xs-12 portfolio-item">
                 <a href="" data-toggle="modal" data-target="#modal4">
-                    <img src="img/Placeholder 150x150.png" />
+                    <img src="img/Placeholder 150x150.png" />              
                 </a>
             </div>
             <div class="row">
@@ -334,12 +335,13 @@
     <footer>
         <div class="container text-center">
             <p><small> &copy; Matthew Clutts 2016</small></p>
+            <div class="flaticon">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
         </div>
     </footer>
 
 
     <!---Modals-->
-    <!--<section class="jscalc">
+    <section id="modals">
         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -347,17 +349,17 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h1 class="modal-title" id="myModalLabel">Integer Calculator</h1>
                 </div>
-            <div class="modal-body col-sm-4">
-                <label>Enter 5 Numbers<input type="text" name="num1" id="num1" /></label><br />
-                <input type="submit" value="Maximum!" onclick="maxnumber();" />
-                <input type="submit" value="Minimum!" onclick="minnumber();" />
-                <input type="submit" value="Mean!" onclick="meannumber();" />
-                <input type="submit" value="Sum!" onclick="sumnumber();" />
-                <input type="submit" value="Product!" onclick="prdnumber();" />
-                <textarea id="jscalc-output"></textarea>
+            <div class="modal-body col-md-8 col-xs-4">
+                <label>Enter 5 Numbers:<input class="userinput" type="text" name="num1" id="num1" placeholder="Separate numbers with commas" /></label><br />
+                <input class="inputbtn" type="submit" value="Maximum!" onclick="maxnumber();" />
+                <input class="inputbtn" type="submit" value="Minimum!" onclick="minnumber();" />
+                <input class="inputbtn" type="submit" value="Mean!" onclick="meannumber();" />
+                <input class="inputbtn" type="submit" value="Sum!" onclick="sumnumber();" />
+                <input class="inputbtn" type="submit" value="Product!" onclick="prdnumber();" />
+                <textarea id="jscalc-output" rows="5" cols="63"></textarea>
 
 
-                <script type="text/javascript">
+                <!--<script type="text/javascript">
                     function getvaluecalc() {
                         return document.getElementById('num1').value;
                     }
@@ -436,7 +438,7 @@
                         }
                         intOutput(prdnum);
                     }
-                </script>
+                </script>-->
             </div>
             <div class="modal-footer no-margin">
             </div>
@@ -451,13 +453,27 @@
                 <h1 class="Factorial!" id="myModalLabel">Factorial!</h1>
             </div>
             <div class="row">
-                <div class="modal-body col-md-6">
-                    <label>Enter a number:<input type="text" id="num2" name="num2"></label>
-                    <input type="submit" value="Factorial!" onclick="factorial();" />
+                <div class="modal-body col-md-6 col-xs-3">
+                    <p>
+                        In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal 
+                        to n. For example,</p>
+
+                    <p>
+                        5! = 5  \times  4  \times  3  \times  2  \times  1 = 120.  \
+                        The value of 0! is 1, according to the convention for an empty product.
+                    </p>
+                    <p>
+                        The factorial operation is encountered in many areas of mathematics, notably in combinatorics, algebra, and mathematical analysis. 
+                        It's most basic occurrence is the fact that there are n! ways to arrange n distinct objects into a sequence (i.e., permutations of 
+                        the set of objects).
+                    </p>
+                    <label>Enter a number:<input class="userinput" type="text" id="num2" name="num2"></label>
+                    <input class="inputbtn" type="submit" value="Factorial!" onclick="factorial();" />
                     <textarea id="some-fac-func"></textarea>
                 </div>
                 <div class="col-md-6">
-                <pre class="brush: js">
+                
+                 <!--<pre class="brush: js">
                 <script type="text/javascript">
                     function factorial() {
                         var str = document.getElementById('num2').value;
@@ -469,7 +485,7 @@
                         intoutput(somefac);
                     }
                                     </script>
-                                    </pre>
+                                    </pre>-->
                                             </div>
                                         </div>
                                         <div class="modal-footer no-margin">
@@ -497,7 +513,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="col-md-6">
-                                    <pre class="brush: js">
+                                    <!--<pre class="brush: js">
                                     <script type="text/javascript">
 
                         function fizzBuzz() {
@@ -538,7 +554,7 @@
                             document.getElementById('fizzbuzzout').value = output;
                         }
                             </script>
-                            </pre>
+                            </pre>-->
                                     </div>
                                 </div>
                             </div>
@@ -559,29 +575,31 @@
                         <label>Enter a Word:<input type="text" id="num4" name="num4"></label>
                         <input type="submit" value="Check!" onclick="palindrome();" />
                         <textarea id="palicheck"></textarea>
+                        
+                        <!--<pre class="brush: js">
                         <script type="text/javascript">
-
-                            function palindrome() {
-                                var str = document.getElementById('num4').value;
-                                console.log(str);
-                                strrev = str.split('').reverse().join('');
-                                /*if (str == strrev) {
-                                    window.alert("Yes, " + str + " is a Palindrome!")
+                                function palindrome() {
+                                    var str = document.getElementById('num4').value;
+                                    console.log(str);
+                                    strrev = str.split('').reverse().join('');
+                                    /*if (str == strrev) {
+                                        window.alert("Yes, " + str + " is a Palindrome!")
+                                    }
+                                    else {
+                                        window.alert("No, " + str + " is not a Palindrome!")
+                                    }*/
+                                    var somevalue = (str == strrev) ? "Yes, " + str + " is a Palindrome!" : "No, " + str + " is not a Palindrome!";
+                                    document.getElementById('palicheck').value = somevalue;
                                 }
-                                else {
-                                    window.alert("No, " + str + " is not a Palindrome!")
-                                }*/
-                                var somevalue = (str == strrev) ? "Yes, " + str + " is a Palindrome!" : "No, " + str + " is not a Palindrome!";
-                                document.getElementById('palicheck').value = somevalue;
-                            }
                         </script>
+                            </pre>-->
                     </div>
                     <div class="modal-footer no-margin">
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
