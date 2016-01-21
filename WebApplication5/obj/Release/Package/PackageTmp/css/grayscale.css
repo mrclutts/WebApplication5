@@ -381,24 +381,28 @@ body {
 }
 
     /*Skills*/
-#skills .col-md-3, col-xs-3 {
+#skills .col-md-3{
     padding-right: 0px;
     padding-left: 0px;
+    
 }
 #skills {
    background-color: rgba(255,255,255,.5);
    width:100%;
    padding-top: 150px;
 }
-.skilllist {
-    list-style-type: none;
-    text-align:left;
-    
+#skills .row {
+    margin-left: 0;
+    margin-right: 0;
 }
-.skilllist li {
-    font-size: 18px;
-    padding-right: 1px;
+
+
+#skills p {
+    text-align: left;
+    margin-top: 5px;
+
 }
+
 .skillitems {
  
     display: inline-block;
@@ -417,7 +421,10 @@ body {
 #skills img {
     height: 50px;
     width: 50px;
-    padding-right: 5px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
      /*Portfolio*/
