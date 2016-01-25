@@ -395,7 +395,7 @@ body {
 }
 
     /*Skills*/
-#skills .col-md-3{
+#skills .col-md-4{
     padding-right: 0px;
     padding-left: 0px;
     
@@ -411,7 +411,7 @@ body {
 }
 
 .skillsrow {
-    text-align:left;
+    text-align:center;
 }
 
 #skills p {
