@@ -365,8 +365,9 @@ footer p {
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    color: #ffffff;
+    background: #7F7F7F;
+    
 }
 
 img::selection {
@@ -521,6 +522,7 @@ body {
      padding: 10px 20px;
      font-size: 16px;
  }
+
  /* Footer */
 .flaticon {
     font-size: 12px;
