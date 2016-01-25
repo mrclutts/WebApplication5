@@ -214,6 +214,7 @@
     <Content Include="img\mymorningjacket_z.jpg" />
     <Content Include="img\pisland_agoodlook.jpg" />
     <Content Include="img\Placeholder 150x150.png" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
     <None Include="Views\Home\index.cshtml" />
     <Content Include="img\soccer19.png" />
     <Content Include="img\sufjanstevens_carrieandlowell.jpg" />
@@ -230,7 +231,6 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="font-awesome\fonts\FontAwesome.otf" />
     <Content Include="font-awesome\less\bordered-pulled.less" />
     <Content Include="font-awesome\less\core.less" />
