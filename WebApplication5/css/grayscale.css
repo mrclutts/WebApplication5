@@ -448,8 +448,8 @@ body {
      padding-bottom: 40px;
  }
 #portfolio img {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     background-color: #ffffff;
 }
 
@@ -457,9 +457,9 @@ body {
 
 
 
-    /*What I'm Listening To*/
+    /*What I'm Listening To and Modal Hover Effect*/
 
-#music .imgmusic {
+.imgmusic {
     padding: 0;
     margin: 0;
     height: 100%;
@@ -467,14 +467,21 @@ body {
     position: relative;
      
  }
- #music .artist a {
-     height: 275px;
-     width: 275px;
+.artist  a {
+     height: 280px;
+     width: 280px;
      display: block;
      position: relative;
      margin: 0 auto;
  }
- .artistinfo span {
+.modalhov {
+    height: 200px;
+    width: 200px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+ .info span {
    display: table-cell;
    height:100%;
    vertical-align:middle;
@@ -482,7 +489,7 @@ body {
    
  }
  
- .artistinfo {
+ .info {
    text-align: center;
    background: rgba(0,0,0,0.75);
    color: #ffffff;
@@ -501,7 +508,7 @@ body {
     -o-transition: opacity 500ms;
    transition: opacity 500ms;
  }
- #music a:hover .artistinfo {
+ a:hover .info {
    opacity: 1;
   }
  #music .row {
@@ -533,10 +540,15 @@ body {
      background-color: #7F7F7F;
  }
  #modals .modal-body {
-     margin: 0 auto;
+    
       
  }
- #modals .inputbtn {
+.modal-lg{
+    position:relative;
+    width:auto;
+    margin:10px;
+}
+ #modals .funcbtn {
     border: 1px solid #ffffff;
     color: #ffffff;
     background-color: #000000;
@@ -545,9 +557,9 @@ body {
     margin: 5px 15px 5px 0;
 }
 
-#modals .inputbtn:hover,
-.inputbtn:focus {
-    border: 1px solid #ffffff;
+#modals .funcbtn:hover,
+.funcbtn:focus {
+    border: 1px solid #000000;
     outline: 0;
     color: #000;
     background-color: #ffffff;
@@ -559,4 +571,8 @@ body {
 }
 #modals .userinput .placeholder {
     color: #000000;
+}
+#modals .modal-body{
+    overflow-y: hidden;
+ 
 }

@@ -203,6 +203,7 @@
     <Content Include="img\alabamashakes_soundandcolor.png" />
     <Content Include="img\anco_paintingwith.jpg" />
     <Content Include="img\angle1.png" />
+    <Content Include="img\Armstrong_with.png" />
     <Content Include="img\budget2.png" />
     <Content Include="img\computer12.png" />
     <Content Include="img\downloads-bg.jpg" />
@@ -221,12 +222,18 @@
     <Content Include="img\warondrugslostinthedream.png" />
     <Content Include="img\web2.png" />
     <Content Include="index.html" />
+    <Content Include="js\5IntCalc.js" />
+    <Content Include="js\armstrong.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\factorial.js" />
+    <Content Include="js\fizzbuzz.js" />
     <Content Include="js\grayscale.js" />
     <Content Include="js\jquery.easing.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="img\Placeholder 250x250.png" />
+    <Content Include="js\palindrome.js" />
+    <Content Include="js\perfect.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />

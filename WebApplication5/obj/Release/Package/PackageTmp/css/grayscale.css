@@ -395,7 +395,7 @@ body {
 }
 
     /*Skills*/
-#skills .col-md-3{
+#skills .col-md-4{
     padding-right: 0px;
     padding-left: 0px;
     
@@ -411,7 +411,7 @@ body {
 }
 
 .skillsrow {
-    text-align:left;
+    text-align:center;
 }
 
 #skills p {
@@ -468,8 +468,8 @@ body {
      
  }
  #music .artist a {
-     height: 275px;
-     width: 275px;
+     height: 280px;
+     width: 280px;
      display: block;
      position: relative;
      margin: 0 auto;
@@ -533,10 +533,15 @@ body {
      background-color: #7F7F7F;
  }
  #modals .modal-body {
-     margin: 0 auto;
+    
       
  }
- #modals .inputbtn {
+.modal-lg{
+    position:relative;
+    width:auto;
+    margin:10px;
+}
+ #modals .funcbtn {
     border: 1px solid #ffffff;
     color: #ffffff;
     background-color: #000000;
@@ -545,9 +550,9 @@ body {
     margin: 5px 15px 5px 0;
 }
 
-#modals .inputbtn:hover,
-.inputbtn:focus {
-    border: 1px solid #ffffff;
+#modals .funcbtn:hover,
+.funcbtn:focus {
+    border: 1px solid #000000;
     outline: 0;
     color: #000;
     background-color: #ffffff;
@@ -559,4 +564,8 @@ body {
 }
 #modals .userinput .placeholder {
     color: #000000;
+}
+#modals .modal-body{
+    overflow-y: hidden;
+ 
 }
