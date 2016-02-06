@@ -76,7 +76,9 @@ a:focus {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
-
+.navbar  {
+    background-color: #000000;
+}
 .navbar-custom .navbar-brand {
     font-weight: 700;
 }
@@ -108,7 +110,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: #000000;
     background-color: transparent;
 }
 
@@ -155,7 +157,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url('../img/bostonbackground.jpg') no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -447,11 +449,6 @@ body {
 #portfolio .col-xs-12 {
      padding-bottom: 40px;
  }
-#portfolio img {
-    height: 200px;
-    width: 200px;
-    background-color: #ffffff;
-}
 
 
 
@@ -467,7 +464,7 @@ body {
     position: relative;
      
  }
-.artist  a {
+.artist {
      height: 280px;
      width: 280px;
      display: block;
@@ -481,14 +478,33 @@ body {
     position: relative;
     margin: 0 auto;
 }
+.largeimghov {
+    height: 200px;
+    width: 400px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+.modalicon {
+    height: 20px;
+    width: 20px;
+}
  .info span {
    display: table-cell;
    height:100%;
    vertical-align:middle;
-
-   
  }
- 
+ #modals .modal-footer ul{
+     text-align:center;
+     list-style: none;
+     padding: 0;
+ }
+ #modals .modal-footer li{
+    
+    display:inline-block;
+
+ }
+
  .info {
    text-align: center;
    background: rgba(0,0,0,0.75);
@@ -518,6 +534,7 @@ body {
  #music .col-xs-12 {
      padding-bottom: 40px;
  }
+ 
 
 
 /*Contact*/
@@ -567,12 +584,31 @@ body {
 #modals .userinput {
     color: #000000;
     width: 350px;
+    outline: none;
     
+}
+#modals .userinput:focus {
+    border: 1px solid #000000;
+    box-shadow: 0 0 5px #000000;
 }
 #modals .userinput .placeholder {
     color: #000000;
 }
+.modal-title {
+    text-align:center;
+}
 #modals .modal-body{
     overflow-y: hidden;
  
+}
+.jsdisplay {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+#display {
+    color: #000000;
+    font-size: 13px;
+    font-weight:bold;
+    outline: none;
 }

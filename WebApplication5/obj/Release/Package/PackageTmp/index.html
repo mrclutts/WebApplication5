@@ -15,11 +15,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link href="css/calcstyle.css" rel="stylesheet" />
     <link href="css/grayscale.css" rel="stylesheet">
     <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
     <link href="Content/SyntaxHighlighter/shThemeFadeToGrey.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="img/web2.png">
-
+   
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -173,47 +174,82 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xs-12 text-center">
-                    <h2>Portfolio (coming soon!)</h2>
+                    <h2>Portfolio</h2>
                     <hr />
                 </div>
             </div>
-            <!---Modals 5 Integer Calculator--->
+            <!--Calculator-->
+            <div class="col-md-12 col-xs-12 portfolio-item">
+                <a href="" class="largeimghov" data-toggle="modal" data-target="#modal8">
+                    <img src="img/placeholder 400x200.png" class="imgmusic" />
+                    <span class="info"><span>JS Calculator</span></span>
+                </a>
+            </div>
+            <!---Modal Prime--->
             <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" data-toggle="modal" data-target="#modal1">
-                    <img src="img/Placeholder 150x150.png" />    
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal1">
+                    <img src="img/Placeholder 150x150.png" class="imgmusic"/>
+                    <span class="info">
+                        <span>Prime Numbers</span></span>    
                 </a>
             </div>
 
 
-            <!---Modal 2-->
+            <!---Modal Armstrong Numbers-->
             <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" data-toggle="modal" data-target="#modal2">
-                    <img src="img/Placeholder 150x150.png" />        
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal2">
+                    <img src="img/Armstrong_with.png" class="imgmusic"/>
+                    <span class="info"><span>Armstrong Numbers</span></span>         
                 </a>
             </div>
 
-            <!---Modal 3-->
+            <!---Modal Perfect Numbers-->
             <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" data-toggle="modal" data-target="#modal3">
-                    <img src="img/Placeholder 150x150.png" />
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal3">
+                    <img src="img/Placeholder 150x150.png" class="imgmusic"/>
+                    <span class="info"><span>Perfect Numbers</span></span>
                 </a>
             </div>
-            <!--Modal 4-->
+            <!--Happy Numbers-->
             <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" data-toggle="modal" data-target="#modal4">
-                    <img src="img/Placeholder 150x150.png" />              
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal7">
+                    <img src="img/Placeholder 150x150.png" class="imgmusic" />
+                    <span class="info"><span>Happy Numbers</span></span>
+                </a>
+            </div>           
+            <!--Modal Palindrome-->
+            <div class="col-md-4 col-xs-12 portfolio-item">
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal4">
+                    <img src="img/Placeholder 150x150.png" class="imgmusic"/>
+                    <span class="info"><span>Palindrome</span></span>              
                 </a>
             </div>
-            <!--Modal 5-->
+            <!--Modal Factorial-->
             <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" data-toggle="modal" data-target="#modal5">
-                    <img src="img/Placeholder 150x150.png" />
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal5">
+                    <img src="img/sheepfactorial.png" class="imgmusic"/>
+                    <span class="info"><span>Factorial</span></span>
                 </a>
             </div>
-            <!--Modal 6-->
+            <!--Modal FizzBuzz-->
             <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" data-toggle="modal" data-target="#modal6">
-                    <img src="img/Placeholder 150x150.png" />
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal6">
+                    <img src="img/Placeholder 150x150.png" class="imgmusic"/>
+                    <span class="info"><span>FizzBuzz</span></span>
+                </a>
+            </div>
+            <!--Modal Fibonacci-->
+            <div class="col-md-4 col-xs-12 portfolio-item">
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal9">
+                    <img src="img/Placeholder 150x150.png" class="imgmusic" />
+                    <span class="info"><span>Fibonacci Sequence</span></span>
+                </a>
+            </div>
+            <!--Modal Temp Converter-->
+            <div class="col-md-4 col-xs-12 portfolio-item">
+                <a href="" class="modalhov" data-toggle="modal" data-target="#modal10">
+                    <img src="img/Placeholder 150x150.png" class="imgmusic" />
+                    <span class="info"><span>Temperature Converter</span></span>
                 </a>
             </div>
             <div class="row">
@@ -233,70 +269,53 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="artist">
-                        <a href="http://store.mymorningjacket.com/collections/music/products/z-cd" target="_blank">
-                            <img src="img/mymorningjacket_z.jpg" class="imgmusic img-responsive"/>
-                            <span class="artistinfo"><span>My Morning Jacket - <em>Z</em></span></span>
-                        </a>
-                    </div>
+                    <a href="http://store.mymorningjacket.com/collections/music/products/z-cd" class="artist" target="_blank">
+                        <img src="img/mymorningjacket_z.jpg" class="imgmusic img-responsive" />
+                        <span class="info"><span>My Morning Jacket - <em>Z</em></span></span>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="artist">
-                            <a href="https://secure.dominorecordco.com/cart/?site=29&ses_key=6i0n7r7l&item=9411" target="_blank">
-                                <img src="img/anco_paintingwith.jpg" class="imgmusic" />
-                                <span class="artistinfo"><span>Animal Collective - <em>Painting With</em></span></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="artist">
-                            <a href="https://megamart.subpop.com/releases/fleet_foxes/helplessness_blues" target="_blank">
-                                <img src="img/fleetfoxes_helplessnessblues.jpg" class="imgmusic" />
-                                <span class="artistinfo"><span>Fleet Foxes - <em>Helplessness <br />Blues</em></span></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="artist">
-                            <a href="https://privateisland.bandcamp.com/album/a-good-look-ep" target="_blank">
-                                <img src="img/pisland_agoodlook.jpg" class="imgmusic" />
-                                <span class="artistinfo"><span>Private Island - <em>A Good Look</em></span></span>
-                            </a>
-                        </div>
-                    </div>
+                    <a href="https://secure.dominorecordco.com/cart/?site=29&ses_key=6i0n7r7l&item=9411" class="artist" target="_blank">
+                        <img src="img/anco_paintingwith.jpg" class="imgmusic" />
+                        <span class="info"><span>Animal Collective - <em>Painting With</em></span></span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <a href="https://megamart.subpop.com/releases/fleet_foxes/helplessness_blues" class="artist" target="_blank">
+                        <img src="img/fleetfoxes_helplessnessblues.jpg" class="imgmusic" />
+                        <span class="info"><span>Fleet Foxes - <em>Helplessness <br />Blues</em></span></span>
+                    </a>
+                 </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <a href="https://privateisland.bandcamp.com/album/a-good-look-ep" class="artist" target="_blank">
+                        <img src="img/pisland_agoodlook.jpg" class="imgmusic" />
+                        <span class="info"><span>Private Island - <em>A Good Look</em></span></span>
+                    </a>
                 </div>
                 <div class="row">
                 <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="artist">
-                        <a href="http://www.rockandrolltshirts.com/RNR_Store/grizzly-bear-music" target="_blank">
+                        <a href="http://www.rockandrolltshirts.com/RNR_Store/grizzly-bear-music" class="artist" target="_blank">
                             <img src="img/grizzlybear_shields.png" class="imgmusic" />
-                            <span class="artistinfo"><span>Grizzly Bear - <em>Shields</em></span></span>
+                            <span class="info"><span>Grizzly Bear - <em>Shields</em></span></span>
                         </a>
-                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="artist">
-                        <a href="http://music.sufjan.com/album/carrie-lowell" target="_blank">
+                        <a href="http://music.sufjan.com/album/carrie-lowell" class="artist" target="_blank">
                             <img src="img/sufjanstevens_carrieandlowell.jpg" class="imgmusic" />
-                            <span class="artistinfo"><span>Sufjan Stevens - <em>Carrie &amp; Lowell</em></span></span>
+                            <span class="info"><span>Sufjan Stevens - <em>Carrie &amp; Lowell</em></span></span>
                         </a>
-                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="artist">
-                        <a href="http://www.rockandrolltshirts.com/RNR_Store/The-War-on-Drugs-Music" target="_blank">
+                        <a href="http://www.rockandrolltshirts.com/RNR_Store/The-War-on-Drugs-Music" class="artist" target="_blank">
                             <img src="img/warondrugslostinthedream.png" class="imgmusic" />
-                            <span class="artistinfo"><span>The War on Drugs - <em>Lost in the Dream</em></span></span>
+                            <span class="info"><span>The War on Drugs - <em>Lost in the Dream</em></span></span>
                         </a>
-                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-xs-12">
-                    <div class="artist">
-                        <a href="http://www.alabamashakes.com/audio/sounds-color/" target="_blank">
-                            <img src="img/alabamashakes_soundandcolor.png" class="imgmusic" />
-                            <span class="artistinfo"><span> Alabama Shakes - <em>Sound &amp; Color</em></span></span>
-                        </a>
-                    </div>
+                    <a href="http://www.alabamashakes.com/audio/sounds-color/" class="artist" target="_blank">
+                        <img src="img/alabamashakes_soundandcolor.png" class="imgmusic" />
+                        <span class="info"><span> Alabama Shakes - <em>Sound &amp; Color</em></span></span>
+                    </a>
                 </div>
                 <div class="col-md-12 col-xs-12">
                     <a href="#contact" class="btn btn-circle page-scroll">
@@ -345,152 +364,95 @@
 
 
     <!---Modals-->
+    <!--Prime-->
     <section id="modals">
         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h1 class="modal-title" id="myModalLabel">Integer Calculator</h1>
+            <div class="modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">Prime!</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-6 col-xs-12">
+                            <p>A <a href="https://en.wikipedia.org/wiki/Prime_number">prime number</a> is a natural number greater than 1 that has no positive divisors other than 1 and itself.  A natural number greater than 1 that is not a prime number is called a composite number.  For example, 5 is prime because 1 and 5 are its only positive integer factors, whereas 6 is composite because it has the divisors 2 and 3 in addition to 1 and 6.  This program will display all prime numbers up and, if applicable, including the number entered by the user, while excluding composite numbers.</p>
+                            <label>Enter a number:</label><input type="text" class="userinput" id="prime1" maxlength="5" required>
+                            <input type="button" class="funcbtn" value="Prime!" onclick="primeNo();">
+                            <div class="jsdisplay" id="printprime"></div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <pre class="brush:js">
+function primeNo() {
+var userInput = parseInt(document.getElementById("prime1").value);
+var vali = validate(userInput);
+var posi = positive(userInput);
+	if (!vali) {
+		document.getElementById("printprime").innerHTML = "Please enter a number!"
+	}
+	else if (!posi) {
+		document.getElementById("printprime").innerHTML = "Please enter a positive number great than 1."
+	}
+	else {
+	var arr = [];
+	for (a=2; a<=userInput; a++) {
+		var prime = true;
+		
+		for (b=2; b < a; b++) {
+			if(a % b === 0)
+			{
+				prime = false;
+			}
+		}
+		if (prime) {
+			arr.push(a);
+		}
+	}
+		document.getElementById("printprime").innerHTML = arr.join(" ");
+	}	
+}
+function validatePrime(num1) {
+	if (isNaN(num1)) 
+		return false;
+	else 
+		return true;
+}
+function positivePrime(num1) {
+	if (num1 <=1)
+		return false
+	else
+		return true
+}
+                    </pre>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
                 </div>
-            <div class="modal-body">
-                <div class="col-md-6 col-xs-12">
-                    
-                        <label>Enter a Number</label><input type="number" class="userinput" name="num1" id="num1" required><br>
-                        <label>Enter a Number</label><input type="number" class="userinput" name="num2" id="num2" required><br>
-                        <label>Enter a Number</label><input type="number" class="userinput" name="num3" id="num3" required><br>
-                        <label>Enter a Number</label><input type="number" class="userinput" name="num4" id="num4" required><br>
-                        <label>Enter a Number</label><input type="number" class="userinput" name="num5" id="num5" required><br>
-                    
-                    <input type="button" class="funcbtn" value="Maximum!" onclick="maxNumber();" />
-                    <input type="button" class="funcbtn" value="Minimum!" onclick="minNumber();" />
-                    <input type="button" class="funcbtn" value="Mean!" onclick="meanNumber();" />
-                    <input type="button" class="funcbtn" value="Sum!" onclick="sumNumber();" />
-                    <input type="button" class="funcbtn" value="Product!" onclick="prdNumber();" />
-                    <div id="show"></div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <pre class="brush:js">
-                    function maxNumber(){
-                    
-                    var vali = validate(str1, str2, str3, str4, str5);
-	                    if(!vali) {
-		                    document.getElementById("show").innerHTML = "Enter all numbers";
-	                    }
-	                    else {
-		                    var numArr = Math.max(str1,str2,str3,str4,str5);
-		                    document.getElementById("show").innerHTML = "Maximum: " + numArr;
-	                    }
-                    }
-                    function minNumber()
-                    {
-                    var str1 = parseInt(document.getElementById('num1').value);
-                    var str2 = parseInt(document.getElementById('num2').value);
-                    var str3 = parseInt(document.getElementById('num3').value);
-                    var str4 = parseInt(document.getElementById('num4').value);
-                    var str5 = parseInt(document.getElementById('num5').value);
-                    var vali = validate(str1,str2,str3,str4,str5);
-	                    if(!vali) {
-		                    document.getElementById("show").innerHTML = "Enter all numbers";
-	                    }
-	                    else {
-		                    var numArr = Math.min(str1,str2,str3,str4,str5);
-		                    document.getElementById("show").innerHTML = "Minimum: " + numArr;
-	                    }
-                    }
-                    function meanNumber() 
-                    {
-                    var str1 = parseInt(document.getElementById('num1').value);
-                    var str2 = parseInt(document.getElementById('num2').value);
-                    var str3 = parseInt(document.getElementById('num3').value);
-                    var str4 = parseInt(document.getElementById('num4').value);
-                    var str5 = parseInt(document.getElementById('num5').value);
-                    var vali = validate(str1,str2,str3,str4,str5);
-	                    if(!vali) {
-		                    document.getElementById("show").innerHTML = "Enter all numbers";
-	                    }
-	                    else {
-                    var numArr = [str1, str2, str3, str4, str5]
-                    var sumNum = 0;
-                    var mean = 0;
-	                    for (var i = 0; i < numArr.length; i++) {
-		                    numArr[i] = parseInt(numArr[i]);
-		                    sumNum = sumNum + numArr[i];
-	                    }
-	                    mean = sumNum / numArr.length;
-	                    document.getElementById("show").innerHTML = "Mean: " + mean;
-                    }
-                    }
-                    function sumNumber() {
-                    var str1 = parseInt(document.getElementById('num1').value);
-                    var str2 = parseInt(document.getElementById('num2').value);
-                    var str3 = parseInt(document.getElementById('num3').value);
-                    var str4 = parseInt(document.getElementById('num4').value);
-                    var str5 = parseInt(document.getElementById('num5').value); 
-                    var vali = validate(str1, str2, str3, str4, str5);
-	                    if(!vali) {
-		                    document.getElementById("show").innerHTML = "Enter all numbers";
-	                    }
-	                    else {
-		                    var numArr = [str1, str2, str3, str4, str5];
-		                    var sumNum = 0;
-			                    for (var i = 0; i < numArr.length; i++) {
-			                    numArr[i] = parseInt(numArr[i]);
-			                    sumNum = sumNum + numArr[i];
-		                    }
-		                    document.getElementById("show").innerHTML = "Sum: " + sumNum;
-	                    }
-                    }
-                    function prdNumber(){
-	                    var str1 = parseInt(document.getElementById('num1').value);
-	                    var str2 = parseInt(document.getElementById('num2').value);
-	                    var str3 = parseInt(document.getElementById('num3').value);
-	                    var str4 = parseInt(document.getElementById('num4').value);
-	                    var str5 = parseInt(document.getElementById('num5').value); 
-	                    var vali = validate(str1, str2, str3, str4, str5);
-	                    if(!vali) {
-		                    document.getElementById("show").innerHTML = "Enter all numbers"
-	                    }
-	                    else {
-	                    var numArr = [str1, str2, str3, str4, str5];
-	                    var prdNum = 1;
-		                    for (var i = 0; i < numArr.length; i++) {
-			                    numArr[i] = parseInt(numArr[i]);
-			                    prdNum = prdNum * numArr[i];
-		                    }
-		                    document.getElementById("show").innerHTML = "Product: " + prdNum;
-	                    }
-                    }
-                    function validate(str1,str2,str3,str4,str5){
-	                    if(isNaN(str1) || isNaN(str2) || isNaN(str3) || isNaN(str4) || isNaN(str5))
-		                    return false;
-	                    else
-		                    return true;
-                    }
-                </pre>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="modal-footer no-margin">
             </div>
         </div>
-    </div>
-    </div>
-    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h1 class="modal-title" id="myModalLabel">Armstrong Number</h1>
-            </div>
-                <div class="modal-body">
-                    <div class="col-md-6 col-xs-12">
-                        <p>An Armstrong number is an integer such that the sum of the cubes of its digits is equal to the number itself. (i.e. 371 is an Armstrong number since 3<sup>3</sup> + 7<sup>3</sup> + 1<sup>3</sup> = 371)  This program will find and display all three-digit Armstrong numbers.</p>
-                        <label>Display all 3-digit Armstrong Numbers.</label><br><input type="button" class="funcbtn" value="Display!" onclick="armstrong();">
-                        <div id="showArm"></div>
-                     </div>  
-                     <div class="col-md-6 col-xs-12">
-                         <pre class="brush: js">
+        <!--Armstrong Numbers-->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">Armstrong Number</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-6 col-xs-12">
+                            <p>An Armstrong number is an integer such that the sum of the cubes of its digits is equal to the number itself. (i.e. 371 is an Armstrong number since 3<sup>3</sup> + 7<sup>3</sup> + 1<sup>3</sup> = 371)  This program will find and display all three-digit Armstrong numbers.</p>
+                            <label>Display all 3-digit Armstrong Numbers.</label><br><input type="button" class="funcbtn" value="Display!" onclick="armstrong();">
+                            <div class="jsdisplay" id="showArm"></div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <pre class="brush: js">
                             function armstrong() {
                                 for (var i = 100; i < 1000; i++) {
                                    var str=i.toString()
@@ -503,37 +465,44 @@
                                 }
                             }
                          </pre>
+                        </div>
                     </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="modal-footer no-margin">
+                    <div class="clearfix"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-lg">
-        <div class="modal-content" col-sm-6>
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h1 class="modal-title" id="myModalLabel">Perfect Numbers</h1>
-            </div>
-            <div class="modal-body">
-                <div class="col-md-6 col-xs-12">
-                <p>In number theory, a perfect number is a positive integer that is e   qual to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself.  The first perffect number is 6 -- its positive divisors (excluding itself) are 1,2, and 3, whose sum is 6.</p>
-                <p>This function will determine whether a given number is "perfect."</p>
-                    <label>Enter a number:</label><input type="number" class="userinput" id="per1">
-                    <input type="button" class="funcbtn"value="Check!" onclick="perfect();" />
-                    <div id="showPer"></div>
-                <br />
-                <div>
-                <p>This function will display all Perfect Numbers from 1 - 10,000.</p>
-                <input type="button" class="funcbtn" value="Display!" onclick="perfectNo();">
-                </div>
-                <div id="printPer"></div>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <pre class="brush: js">
+        <!--Perfect Numbers-->
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-lg">
+                <div class="modal-content" col-sm-6>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">Perfect Numbers</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-6 col-xs-12">
+                            <p>In number theory, a perfect number is a positive integer that is e   qual to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself.  The first perffect number is 6 -- its positive divisors (excluding itself) are 1,2, and 3, whose sum is 6.</p>
+                            <p>This function will determine whether a given number is "perfect."</p>
+                            <label>Enter a number:</label><input type="number" class="userinput" id="per1">
+                            <input type="button" class="funcbtn" value="Check!" onclick="perfect();" />
+                            <div class="jsdisplay" id="showPer"></div>
+                            <br />
+                            <div>
+                                <p>This function will display all Perfect Numbers from 1 - 10,000.</p>
+                                <input type="button" class="funcbtn" value="Display!" onclick="perfectNo();">
+                            </div>
+                            <div class="jsdisplay" id="printPer"></div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <pre class="brush: js">
     function perfect() {
 		var userInput = parseInt(document.getElementById("num1").value);
 		var arry = [];
@@ -582,30 +551,37 @@
 	    }
     }
                 </pre>
-            </div>
-        </div>  
-            <div class="clearfixed"></div>
-            <div class="modal-footer no-margin">
+                        </div>
+                    </div>
+                    <div class="clearfixed"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h1 class="modal-title" id="myModalLabel">Palindrome Checker</h1>
-                </div>
-                <div class="modal-body">
-                    <div class="col-md-6 col-xs-12">
-                        <p>A <a href="https://en.wikipedia.org/wiki/Palindrome"> palindrome</a> is a word, phrase, number, or sequence of characters which reads the same backward or forward. allowances may be made for adjustments to capital letters, puncuation, and word dividers. the word "palindrome was coined by the English playwright Ben Johnson in the 17th century from the Greek roots <em>pali</em> ("again") and <em>dromos ("way, direction").</em></p>
-                        <label>Enter a Word:</label><input type="text" class="userinput" id="pali1">
-                        <input type="button" value="Check!" class="funcbtn" onclick="palindrome();" />
-                        <div id="showpali"></div>
+        <!--Palindrome-->
+        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">Palindrome Checker</h1>
                     </div>
-                    <div class="col-md-6 col-xs-12">
-                        <pre class="brush: js">
+                    <div class="modal-body">
+                        <div class="col-md-6 col-xs-12">
+                            <p>A <a href="https://en.wikipedia.org/wiki/Palindrome"> palindrome</a> is a word, phrase, number, or sequence of characters which reads the same backward or forward. allowances may be made for adjustments to capital letters, puncuation, and word dividers. the word "palindrome was coined by the English playwright Ben Johnson in the 17th century from the Greek roots <em>pali</em> ("again") and <em>dromos ("way, direction").</em></p>
+                            <label>Enter a Word:</label><input type="text" class="userinput" id="pali1">
+                            <input type="button" value="Check!" class="funcbtn" onclick="palindrome();" />
+                            <div class="jsdisplay" id="showpali"></div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <pre class="brush: js">
 function palindrome() {
     var userInput = document.getElementById('pali1').value;
     var vali = validatePali(userInput);
@@ -632,14 +608,21 @@ function validatePali(userInput) {
         return false;
 }
                         </pre>
+                        </div>
                     </div>
-                </div>
-                <div class="clearfixed"></div>
-                <div class="modal-footer no-margin">
+                    <div class="clearfixed"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!--Factorial-->
         <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-lg">
                 <div class="modal-content">
@@ -652,7 +635,7 @@ function validatePali(userInput) {
                             <p>In mathematics, the <a href="https://en.wikipedia.org/wiki/Factorial">factorial</a> of a non-negative integer <em>n</em>, denoted by <em>n</em>!, is the product of all positive integers less than or equal to <em>n</em>.  For example, 5! = 5 x 4 x 3 x 2 x 1 = 120.  This program calculates the factorial of a given number.</p>
                             <label>Enter a number:</label><input type="number" class="userinput" id="fac1" required>
                             <input type="button" class="funcbtn" value="Run!" onclick="factorial();">
-                            <div id="showfac"></div>
+                            <div class="jsdisplay" id="showfac"></div>
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <pre class="brush: js">
@@ -695,10 +678,17 @@ function positive(num1) {
                     </div>
                     <div class="clearfixed"></div>
                     <div class="modal-footer">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <!--FizzBuzz-->
         <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-lg">
                 <div class="modal-content">
@@ -714,7 +704,7 @@ function positive(num1) {
                                 <label>Enter a number:</label><input type="number" class="userinput" id="fb2"><br />
                                 <input type="button" class="funcbtn" value="FizzBuzz!" onclick="fizzBuzz();" />
                             </center>
-                            <div id="showfb"></div>
+                            <div class="jsdisplay" id="showfb"></div>
                         </div>
                         <div class="col-md-6 col-xs12">
                             <pre class="brush: js">
@@ -806,12 +796,242 @@ function negativeCheckFB(user1, user2) {
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-</section>
+        <!--Happy Number-->
+        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">Happy Numbers</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-6 col-xs-12">
+                            <p>A <a href="https://en.wikipedia.org/wiki/Happy_number">Happy Number</a> is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number either equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.  Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy or sad numbers.  This program is designed to display the first 5 Happy Numbers beginning with 1. </p>
+                            <label>Display the first 5 Happy Numbers:</label>
+                            <input type="button" class="funcbtn" value="Display" onclick="happyNo();">
+                            <div id="showhappy"></div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <pre class="brush: js">
+function happyNo() {
+for (var i = 1; i < 20; i++) {
+    var str=i.toString();
+        for (var j=1; j < 10; j++) {
+		    var a = parseInt(str.substring(0,1));
+		    var c = Math.pow(a, 2);
+		    if (str.length < 2) {
+			        var d = 0;
+		        }
+		        else {
+			        var b = parseInt(str.substring(1,2));
+			        var d = Math.pow(b, 2);
+		        }
+		        var result = c + d;
+			    if (result === 1) {
+				    document.getElementById("showhappy").innerHTML += i + " ";
+				    break;
+			    }
+			    else {
+				    str = result.toString();
+		    }
+		}
+	}
+}
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="clearfixed"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Javascript Calculator-->
+        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">JavaScript Calculator</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="calc">
+                                <div class="calcRow"></div>
+                                <input type="text" id="display">
+                                <div class="calcRow">
+                                    <input type="button" class="calcBtn" value="7" onclick="display.value += '7'">
+                                    <input type="button" class="calcBtn" value="8" onclick="display.value +='8'">
+                                    <input type="button" class="calcBtn" value="9" onclick="display.value +='9'">
+                                    <input type="button" class="operator" value="+" onclick="display.value +='+'">
+                                </div>
+                                <div class="calcRow">
+                                    <input type="button" class="calcBtn" value="4" onclick="display.value +='4'">
+                                    <input type="button" class="calcBtn" value="5" onclick="display.value +='5'">
+                                    <input type="button" class="calcBtn" value="6" onclick="display.value +='6'">
+                                    <input type="button" class="operator" value="-" onclick="display.value +='-'">
+                                </div>
+                                <div class="calcRow">
+                                    <input type="button" class="calcBtn" value="1" onclick="display.value +='1'">
+                                    <input type="button" class="calcBtn" value="2" onclick="display.value +='2'">
+                                    <input type="button" class="calcBtn" value="3" onclick="display.value +='3'">
+                                    <input type="button" class="operator" value="*" onclick="display.value +='*'">
+                                </div>
+                                <div class="calcRow">
+                                    <input type="button" class="calcBtn" value="0" onclick="display.value +='0'">
+                                    <input type="button" class="calcBtn" value="." onclick="display.value ='.'">
+                                    <input type="button" name="divide" class="operator" value="/" onclick="display.value +='/'">
+                                    <input type="button" name="mod" class="operator" value="%" onclick="display.value +='%'">
+                                </div>
+                                <div class="calcRow">
+                                    <input type="button" name="clear" id="clear" value="C" onclick="display.value = '0'">
+                                    <input type="button" name="equal" id="equal" value="=" onclick="calculate();">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfixed"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fibonacci Series-->
+        <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">Fibonacci Sequence</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-6 col-xs-12">
+                            <p>In mathematics,<a href="https://en.wikipedia.org/wiki/Fibonacci_number"> Fibonacci Sequence</a> is an integer sequence in which each number in the sequence is the sum of the previous two.  By definition, the sequence begins with 1.  This program will display all fibonacci numbers up to the number given by the user.</p>
+                            <label>Enter a number:</label><input class="userinput" type="number" id="fib1" required>
+                            <input type="button" class="funcbtn" value="Run!" onclick="fibonacci();">
+                            <div class="jsdisplay" id="printfib"></div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <pre class="brush:js">
+function fibonacci() {
+var userInput = parseInt(document.getElementById("fib1").value);
+var vali = validateFib(userInput);
+	if (!vali) {
+		document.getElementById("printfib").innerHTML = "Please enter a positive integer."
+	}
+	else {
+	var a = 1;
+	var b = 0;
+	var c = a + b;
+	var arr = [];
+		for(i=1; c < userInput; ) {		
+			c = a + b;
+			if(c >= userInput)
+				{
+					break;
+				}
+				arr.push(c);
+				document.getElementById("printfib").innerHTML = arr.join(" ");
+				a=b;
+				b=c;
+				
+		}
+	}
+}
+function validateFib(userInput) {
+	if(userInput <= 0) {
+		return false;
+    }
+	else {
+		return true;
+    }
+}
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="clearfixed"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Temp Converter-->
+        <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">Temperature Converter</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-6 col-xs-12">
+                            <p>This program will convert a given temperature in degrees Fahrenheit to degrees Celsius.</p>
+                            <label>Enter temperature!</label><input class="userinput" id="temp1">
+                            <input type="button" class="funcbtn" value="Convert!" onclick="fahrenheit();">
+                            <div class="jsdisplay" id="printcel"></div>
+                            <p>This program will convert a given temperature in degrees Celsius to degrees Celsius.</p>
+                            <label>Enter temperature!</label><input class="userinput" id="temp2">
+                            <input type="button" class="funcbtn" value="Convert!" onclick="celsius();">
+                            <div class="jsdisplay" id="printfahr"></div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <pre class="brush: js">
+function fahrenheit() {
+var temp = parseInt(document.getElementById('temp1').value);
+		var celsius = (temp - 32)/(9/5);
+		var c = celsius.toFixed(1);
+		document.getElementById("printfahr").innerHTML = temp + "&deg;F is equal to " + c + "&deg; C!";
+}	
+function celsius() {
+	var temp = parseInt(document.getElementById('temp2').value);
+	var fahrenheit = ((temp * (9/5)) + 32);
+	var f = fahrenheit.toFixed(1);
+	document.getElementById("printcel").innerHTML = temp + "&deg; C is equal to " + f + "&deg; F!";
+}		
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="clearfixed"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -819,6 +1039,11 @@ function negativeCheckFB(user1, user2) {
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <!-- Custom Theme JavaScript -->
+    <script src="js/temp.js"></script>
+    <script src="js/fibonacci.js"></script>
+    <script src="js/happynumbers.js"></script>
+    <script src="js/calcJs.js"></script>
+    <script src="js/prime.js"></script>
     <script src="js/grayscale.js"></script>
     <script src="js/fizzbuzz.js"></script>
     <script src="js/palindrome.js"></script>

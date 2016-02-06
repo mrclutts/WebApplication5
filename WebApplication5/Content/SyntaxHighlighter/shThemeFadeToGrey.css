@@ -80,8 +80,8 @@
   color: #e3e658 !important;
 }
 .syntaxhighlighter .keyword {
-  color: #d01d33 !important;
-}
+  color: #42DCA3 !important;
+} 
 .syntaxhighlighter .preprocessor {
   color: #435a5f !important;
 }
@@ -99,7 +99,7 @@
 }
 .syntaxhighlighter .script {
   font-weight: bold !important;
-  color: #d01d33 !important;
+  color: #42DCA3 !important;
   background-color: none !important;
 }
 .syntaxhighlighter .color1, .syntaxhighlighter .color1 a {
