@@ -790,12 +790,12 @@ for (var i = 1; i < 20; i++) {
                                 </div>
                                 <div class="calcRow">
                                     <input type="button" class="calcBtn" value="0" onclick="display.value +='0'">
-                                    <input type="button" class="calcBtn" value="." onclick="display.value ='.'">
+                                    <input type="button" class="calcBtn" value="." onclick="display.value +='.'">
                                     <input type="button" name="divide" class="operator" value="/" onclick="display.value +='/'">
                                     <input type="button" name="mod" class="operator" value="%" onclick="display.value +='%'">
                                 </div>
                                 <div class="calcRow">
-                                    <input type="button" name="clear" id="clear" value="C" onclick="display.value = '0'">
+                                    <input type="button" name="clear" id="clear" value="C" onclick="display.value = ''">
                                     <input type="button" name="equal" id="equal" value="=" onclick="calculate();">
                                 </div>
                             </div>

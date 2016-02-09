@@ -6,7 +6,7 @@ function factorial() {
 		document.getElementById("showfac").innerHTML = "Please enter a number!";
 	}
 	else if (!posi) {
-		document.getElementById("showfac").innerHTML = "Nice try.  Go read a paper on negative factorials.  In the meantime, please enter a positive integer.";
+		document.getElementById("showfac").innerHTML = "Please enter a positive number.";
 	}
 	else {
 		var fac = 1
