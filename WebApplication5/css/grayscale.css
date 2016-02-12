@@ -595,6 +595,10 @@ body {
     color: #000;
     background-color: #ffffff;
 }
+.funcbtn:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
 #modals .userinput {
     color: #000000;
     width: 350px;
@@ -629,4 +633,13 @@ body {
 #modals .close {
     color: rgba(255,255,255,.1);
     font-size: 30px;
+}
+.error {
+    color:#ff9900;
+}
+.userinputdisplay {
+    color: #42dca3;
+}
+.fizzbuzzdisplay {
+    color: #E3E658;
 }

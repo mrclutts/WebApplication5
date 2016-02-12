@@ -232,6 +232,7 @@
     <None Include="Views\Home\index.cshtml" />
     <Content Include="img\placeholder 400x200.png" />
     <Content Include="img\prime.jpg" />
+    <Content Include="img\prog-jquery.png" />
     <Content Include="img\prog-js01.png" />
     <Content Include="img\rsz_mattbrewery.png" />
     <Content Include="img\rus-vk-01.png" />

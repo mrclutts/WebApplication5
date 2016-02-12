@@ -376,32 +376,35 @@
                     <div class="modal-body">
                         <div class="col-md-6 col-xs-12">
                             <p>A <a href="https://en.wikipedia.org/wiki/Prime_number" target="_blank">prime number</a> is a natural number greater than 1 that has no positive divisors other than 1 and itself.  A natural number greater than 1 that is not a prime number is called a composite number.  For example, 5 is prime because 1 and 5 are its only positive integer factors, whereas 6 is composite because it has the divisors 2 and 3 in addition to 1 and 6.  This program will display all prime numbers up and, if applicable, including the number entered by the user, while excluding composite numbers.</p>
-                            <label>Enter a number:</label><input type="text" class="userinput" id="prime1" maxlength="5" required>
-                            <input type="button" class="funcbtn" value="Prime!" onclick="primeNo();">
+                            <label>Enter a number:</label><input type="number" class="userinput" id="prime1" required>
+                            <input type="button" class="funcbtn" value="Prime!" id="getprime">
+                            <input type="button" class="funcbtn" value="Clear!" id="clearprime">
                             <div class="jsdisplay" id="printprime"></div>
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <pre class="brush:js">
-function primeNo() {
-var userInput = parseInt(document.getElementById("prime1").value);
-	if  {
-	var arr = [];
-	for (a=2; a<=userInput; a++) {
-		var prime = true;
-		
-		for (b=2; b < a; b++) {
-			if(a % b === 0)
-			{
-				prime = false;
-			}
-		}
-		if (prime) {
-			arr.push(a);
-		}
-	}
-		document.getElementById("printprime").innerHTML = arr.join(" ");
-	}	
-}
+$("#getprime").on("click", function () {
+    var userInput = parseInt($("#prime1").val());
+        var arr = [];
+        for (a = 2; a <= userInput; a++) {
+            var prime = true;
+            for (b = 2; b < a; b++) {
+                if (a % b === 0) {
+                    prime = false;
+                }
+            }
+            if (prime) {
+                arr.push(a);
+            }
+        }
+        $("#printprime").removeClass("error");
+        $("#printprime").addClass("jsdisplay");
+        $("#printprime").append(arr.join(" ")).show();
+});
+$("#clearprime").on("click", function () {
+    $("#printprime").hide();
+    $("#prime1").val(" ");
+});
 
                     </pre>
                         </div>
@@ -409,6 +412,7 @@ var userInput = parseInt(document.getElementById("prime1").value);
                     <div class="clearfix"></div>
                     <div class="modal-footer no-margin">
                         <ul>
+                            <li><img src="img/prog-jquery.png" /></li>
                             <li><img src="img/prog-js01.png" /> </li>
                             <li><img src="img/html5-02.png" /> </li>
                             <li><img src="img/css3-02.png" /> </li>
@@ -429,7 +433,7 @@ var userInput = parseInt(document.getElementById("prime1").value);
                     <div class="modal-body">
                         <div class="col-md-6 col-xs-12">
                             <p>An <a href="https://en.wikipedia.org/wiki/Narcissistic_number" target="_blank"> Armstrong Number</a> is an integer such that the sum of the cubes of its digits is equal to the number itself. (i.e. 371 is an armstrong number since 3<sup>3</sup> + 7<sup>3</sup> + 1<sup>3</sup> = 371)  This program will find and display all three-digit Armstrong numbers.</p>
-                            <label>Display all 3-digit Armstrong Numbers.</label><br><input type="button" class="funcbtn" value="Display!" onclick="armstrong();">
+                            <label>Display all 3-digit Armstrong Numbers.</label><br><input type="button" class="funcbtn" value="Display!" onclick="armstrong(); this.disabled = true;">
                             <div class="jsdisplay" id="showArm"></div>
                         </div>
                         <div class="col-md-6 col-xs-12">
@@ -441,8 +445,7 @@ var userInput = parseInt(document.getElementById("prime1").value);
                                    var b=parseInt(str.substring(1,2));
                                    var c=parseInt(str.substring(2,3));
                                    if (math.pow(a, 3) + math.pow(b, 3) + math.pow(c, 3)= = =i) {
-                                   document.getelementbyid("showArm").innerhtml += 
-                                   " The number " + i + " is an Armstrong number.";
+                                   document.getelementbyid("showArm").innerhtml += i + " ";
                                    }
                                 }
                             }
@@ -474,64 +477,75 @@ var userInput = parseInt(document.getElementById("prime1").value);
                             <p>In number theory, a <a href="https://en.wikipedia.org/wiki/Perfect_number" target="_blank"> Perfect Number</a> is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself. the first perffect number is 6 -- its positive divisors (excluding itself) are 1,2, and 3, whose sum is 6.</p>
                             <p>This function will determine whether a given number is "Perfect."</p>
                             <label>Enter a number:</label><input type="number" class="userinput" id="per1">
-                            <input type="button" class="funcbtn" value="Check!" onclick="perfect();" />
-                            <div class="jsdisplay" id="showPer"></div>
+                            <input type="button" class="funcbtn" id="checkper" value="Check!" />
+                            <input type="button" class="funcbtn" id="clearper" value="Clear!" />
+                            <div class="jsdisplay" id="showper"></div>
                             <br />
                             <div>
                                 <p>This function will display all Perfect Numbers from 1 - 10,000.</p>
-                                <input type="button" class="funcbtn" value="Display!" onclick="perfectNo();">
+                                <input type="button" class="funcbtn" value="Display!" id="printper">
                             </div>
-                            <div class="jsdisplay" id="printPer"></div>
+                            <div class="jsdisplay" id="displayper"></div>
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <pre class="brush: js">
-    function perfect() {
-		var userInput = parseInt(document.getElementById("num1").value);
-		var arry = [];
-		if {
-		for (var i = 1; i < userInput; i++) {
-			if (userInput % i === 0) {
-				arry.push(i);
-			}
-			var arrSum = 0;
-				for (var j=0, len=arry.length; j < len; j++) {
-					arrSum += arry[j];
-				}
-					if (arrSum === userInput) {
-						document.getElementById("showPer").innerHTML = 
-                        "Yes, " + userInput + " is a Perfect number.";
-					}
-					else {
-						document.getElementById("showPer").innerHTML = 
-                        "No, " + userInput + " is not a Perfect number.";
-				    }
-			    }	
-		}
-	}
-    function perfectNo() {
-	    for (var i = 1; i < 10000; i++) {
-		    var arry = [];
-		    for (var j = 1; j < i; j++) {
-			    if (i % j === 0) {
-				    arry.push(j);
-			    }
-			    var arrSum = 0;
-			    for (var k=0; k < arry.length; k++) {
-					    arrSum += arry[k];		
-			    }		
-		    }
-		    if (arrSum === i) {
-			    document.getElementById("printPer").innerHTML += 
-                " The number " + i + " is a perfect number. ";
-		    }
-	    }
-    }
+$("#checkper").on("click", function(){
+    var userInput = parseInt($("#per1").val());
+    var arry = [];
+    for (var i = 1; i < userInput; i++) {
+        if (userInput % i === 0) {
+            arry.push(i);
+        }
+        var arrSum = 0;
+        for (var j=0, len=arry.length; j < len; j++) {
+            arrSum += arry[j];
+        }
+        if (arrSum === userInput) {
+            $("#showper").removeClass("error");
+            $("#showper").addClass("jsdisplay");
+            $("#showper").text("Yes, ").show();
+            $("#showper").append("<span>" + userInput + "</span>");
+            $("#showper").append(" is a Perfect number!").show();
+                    
+        }
+        else {
+            $("#showper").removeClass("error");
+            $("#showper").addClass("jsdisplay");
+            $("#showper").text("No, ").show();
+            $("#showper").append("<span class='error'>" + userInput + "</span>");
+            $("#showper").append(" is a not a Perfect number!").show();
+        }		
+    }	
+});
+$("#clearper").on("click", function () {
+    $("#showper").hide();
+    $("#per1").val(" ");
+});
+$("#printper").on("click", function () {
+    $(this).attr("disabled", "disabled");
+        for (var i = 1; i < 10000; i++) {
+            var arry = [];
+            for (var j = 1; j < i; j++) {
+                if (i % j === 0) {
+                    arry.push(j);
+                }
+                var arrSum = 0;
+                for (var k=0; k < arry.length; k++) {
+                    arrSum += arry[k];		
+                }		
+            }
+            if (arrSum === i) {
+                $("#displayper").append(i + " ");
+            }
+        }
+});
                 </pre>
                         </div>
                     </div>
                     <div class="clearfixed"></div>
                     <div class="modal-footer no-margin">
                         <ul>
+                            <li><img src="img/prog-jquery.png" /></li>
                             <li><img src="img/prog-js01.png" /> </li>
                             <li><img src="img/html5-02.png" /> </li>
                             <li><img src="img/css3-02.png" /> </li>
@@ -553,32 +567,49 @@ var userInput = parseInt(document.getElementById("prime1").value);
                         <div class="col-md-6 col-xs-12">
                             <p>A <a href="https://en.wikipedia.org/wiki/Palindrome" target="_blank"> palindrome</a> is a word, phrase, number, or sequence of characters which reads the same backward or forward. allowances may be made for adjustments to capital letters, puncuation, and word dividers. the word "palindrome was coined by the English playwright Ben Johnson in the 17th century from the Greek roots <em>pali</em> ("again") and <em>dromos ("way, direction").</em></p>
                             <label>Enter a Word:</label><input type="text" class="userinput" id="pali1">
-                            <input type="button" value="Check!" class="funcbtn" onclick="palindrome();" />
-                            <div class="jsdisplay" id="showpali"></div>
+                            <input type="button" value="Check!" class="funcbtn" id="checkpali"/>
+                            <input type="button" value="Clear!" class="funcbtn" id="clearpali"/>
+                            <div class="jsdisplay" id="printpali"></div>
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <pre class="brush: js">
-function palindrome() {
-    var userInput = document.getElementById('pali1').value;
-	if  {
-	var str = userInput.toUpperCase().replace(/\s+/g, '');
-	strRev = str.split('').reverse().join('');
-		if (str == strRev) {
-			document.getElementById("showpali").innerHTML = 
-            "Yes, " + userInput + " is a Palindrome!";
-		}
-		else {
-			document.getElementById("showpali").innerHTML = 
-            "No, " + userInput + " is not a Palindrome!";
-		}
-	}
-}
+$("#checkpali").on("click", function(){
+    var userInput = $('#pali1').val();
+    if (userInput == "") {
+        $("#printpali").addClass("error");
+        $("#printpali").text("Please enter a word, phrase, or number.").show();
+    }      
+    else {
+        var str = userInput.toUpperCase().replace(/\s+/g, '');
+        var strRev = str.split('').reverse().join('');
+            if (str == strRev) {
+                $("#printpali").removeClass("error");
+                $("#printpali").addClass("jsdisplay");
+                $("#printpali").text("Yes, ").show();
+                $("#printpali").append("<span class='userinputpal'>" + userInput + "</span>");
+                $("#printpali").append(" is a Palindrome!").show();
+            }
+            else {
+                $("#printpali").removeClass("error");
+                $("#printpali").addClass("jsdisplay");
+                $("#printpali").text("No, ").show();
+                $("#printpali").append("<span class='error'>" + userInput + "</span>");
+                $("#printpali").append(" is not a Palindrome!").show();
+            }
+    }
+});
+    $("#clearpali").on("click", function () {
+        $("#printpali").hide();
+        $("#pali1").val(" ");
+    });
+});
                         </pre>
                         </div>
                     </div>
                     <div class="clearfixed"></div>
                     <div class="modal-footer no-margin">
                         <ul>
+                            <li><img src="img/prog-jquery.png" /></li>
                             <li><img src="img/prog-js01.png" /> </li>
                             <li><img src="img/html5-02.png" /> </li>
                             <li><img src="img/css3-02.png" /> </li>
@@ -600,21 +631,41 @@ function palindrome() {
                         <div class="col-md-6 col-xs-12">
                             <p>In mathematics, the <a href="https://en.wikipedia.org/wiki/Factorial" target="_blank">factorial</a> of a non-negative integer <em>n</em>, denoted by <em>n</em>!, is the product of all positive integers less than or equal to <em>n</em>.  For example, 5! = 5 x 4 x 3 x 2 x 1 = 120.  This program calculates the factorial of a given number.</p>
                             <label>Enter a number:</label><input type="number" class="userinput" id="fac1" required>
-                            <input type="button" class="funcbtn" value="Run!" onclick="factorial();">
+                            <input type="button" class="funcbtn" id="facbtn" value="Run!">
+                            <input type="button" class="funcbtn" id="clearfac" value="Clear!">
                             <div class="jsdisplay" id="showfac"></div>
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <pre class="brush: js">
-function factorial() {
-var userInput = parseInt(document.getElementById("num1").value);
-    if {
-	    var fac = 1
-	    for (i = 1; i<=userInput; i++) {
-		    fac = fac * i;
-	    }
-	    document.getElementById("show").innerHTML = fac;
+$("#facbtn").on("click", function(){
+    var userInput = parseInt($("#fac1").val());
+    if (isNaN(userInput)) {
+        $("#showfac").addClass("error");
+        $("#showfac").text("Please enter a number!").show();
+            
     }
-}
+    else if (userInput <= 0) {
+        $("#showfac").addClass("error");
+        $("#showfac").text("Please enter a positive number!").show();
+    }
+    else {
+    for (var i = 1,fac = 1; i <= userInput; i++) {
+        fac = fac * i;
+        $("#showfac").removeClass("error");
+        $("#showfac").addClass("jsdisplay");
+        $("#showfac").text("The factorial of ");
+        $("#showfac").append("<span>" + userInput + "</span>").show();
+        $("#showfac").append(" is: ")
+        $("#showfac").append("<span>" + fac+ "</span>").show(); 
+                
+    }
+	}
+});
+$("#clearfac").on("click", function() {
+        $("#showfac").hide();
+        $("#fac1").val(" ");
+    });
+});
 
                             </pre>
                         </div>
@@ -622,6 +673,7 @@ var userInput = parseInt(document.getElementById("num1").value);
                     <div class="clearfixed"></div>
                     <div class="modal-footer">
                         <ul>
+                            <li><img src="img/prog-jquery.png" /></li>
                             <li><img src="img/prog-js01.png" /> </li>
                             <li><img src="img/html5-02.png" /> </li>
                             <li><img src="img/css3-02.png" /> </li>
@@ -641,56 +693,54 @@ var userInput = parseInt(document.getElementById("num1").value);
                     </div>
                     <div class="modal-body">
                         <div class="col-md-6 col-xs-12">
-                            <p>This program accepts two numbers between 1 and 100 from the user.  The program then iterates through all numbers from 1 to 100, printing numbers in ascending order to the screen.  For each number that is a multiple of the first number input by the user, the program will print "Fizz" instead of the number.  For each number that is a multpiple of the second number input by the user, the program will print "buzz" instead of the number.  For numbers that are multiples of both numbers, the program will print "FizzBuzz" instead of the number.</p>
+                            <p>This program accepts two numbers between 1 and 100 from the user.  The program then iterates through all numbers from 1 to 100, printing numbers in ascending order to the screen. For each number that is a multiple of the first number input by the user, the program will print "<span class="userinputdisplay">Fizz</span>" instead of the number.For each number that is a multpiple of the second number input by the user, the program will print "<span class="error">Buzz</span>" instead of the number.For numbers that are multiples of both numbers, the program will print "<span class="fizzbuzzdisplay">FizzBuzz</span>" instead of the number.</p>
                             <center>
                                 <label>Enter a number:</label><input type="number" class="userinput" id="fb1"><br />
                                 <label>Enter a number:</label><input type="number" class="userinput" id="fb2"><br />
-                                <input type="button" class="funcbtn" value="FizzBuzz!" onclick="fizzBuzz();" />
+                                <input type="button" class="funcbtn" value="FizzBuzz!" id="getfb" />
+                                <input type="button" class="funcbtn" value="Clear!" id="clearfb" />
                             </center>
                             <div class="jsdisplay" id="showfb"></div>
                         </div>
                         <div class="col-md-6 col-xs12">
                             <pre class="brush: js">
-function fizzBuzz() {
-var user1 = parseInt(document.getElementById('fb1').value);
-var user2 = parseInt(document.getElementById('fb2').value);
-if {
-		var numArr = [user1, user2];
-		var fizzRemain = 1;
-		var buzzRemain = 1;
-		var fizzBuzzRemain = 1;
-		var fizz = numArr[0];
-		var buzz = numArr[1];
-		var fizzBuzz = fizz * buzz;
-		var output = "";
-		output += "";
-			for (var i = 1; i <= 100; i++) {
-				numArr[i] = parseInt(numArr[i]);
-				fizzRemain = i % fizz;
-				buzzRemain = i % buzz;
-				fizzBuzzRemain = i % fizzBuzz;
-				if (fizzBuzzRemain == 0) {
-					output += "FizzBuzz ";
-				}
-				else if (fizzRemain == 0) {
-					output += "Fizz ";
-				}
-				else if (buzzRemain == 0) {
-					output += "Buzz ";
-				}
-				else {
-					output += i + " ";
-				}
-				
-			}
-		document.getElementById("showfb").innerHTML = output;
-	}	
-}
+$("#getfb").on("click", function () { 
+    $("#showfb").empty();
+    var user1 = $('#fb1').val();
+    var user2 = $('#fb2').val();     
+        var numArr = [user1, user2];
+        var fizz = numArr[0];
+        var buzz = numArr[1];
+        for (var i = 1; i <= 100; i++) {
+            numArr[i] = parseInt(numArr[i]);
+            var fizzRemain = i % fizz;
+            var buzzRemain = i % buzz;
+            if (fizzRemain == 0 && buzzRemain == 0) {
+                $("#showfb").append("<span>" + 'FizzBuzz ' + "</span>").show();
+            }
+            else if (fizzRemain == 0) {
+                $("#showfb").append("<span>" + 'Fizz ' + "</span>").show();
+            }
+            else if (buzzRemain == 0) {
+                $("#showfb").append("<span>" + 'Buzz ' + "</span>").show();
+            }
+            else {
+                $("#showfb").removeClass("error");
+                $("#showfb").append("<span>" + i + " " + "</span>").show();
+            }
+        }
+});
+$("#clearfb").on("click", function () {
+    $("#showfb").empty();
+    $("#fb1").val(" ");
+    $("#fb2").val(" ");
+});
                             </pre>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <ul>
+                            <li><img src="img/prog-jquery.png" /></li>
                             <li><img src="img/prog-js01.png" /> </li>
                             <li><img src="img/html5-02.png" /> </li>
                             <li><img src="img/css3-02.png" /> </li>
@@ -711,8 +761,8 @@ if {
                     <div class="modal-body">
                         <div class="col-md-6 col-xs-12">
                             <p>A <a href="https://en.wikipedia.org/wiki/Happy_number" target="_blank">Happy Number</a> is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number either equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.  Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy or sad numbers.  This program is designed to display the first 5 Happy Numbers beginning with 1. </p>
-                            <label>Display the first 5 Happy Numbers:</label>
-                            <input type="button" class="funcbtn" value="Display" onclick="happyNo();">
+                            <label>Display the first 5 Happy Numbers.</label><br />
+                            <input type="button" class="funcbtn" value="Display" onclick="happyNo(); this.disabled = true;">
                             <div class="jsdisplay" id="showhappy"></div>
                         </div>
                         <div class="col-md-6 col-xs-12">
@@ -732,8 +782,7 @@ for (var i = 1; i < 20; i++) {
 		        }
 		        var result = c + d;
 			    if (result === 1) {
-				    document.getElementById("showhappy").innerHTML 
-                    += " The number " + i + " is a Happy Number.";
+				    document.getElementById("showhappy").innerHTML += i + " ";
 				    break;
 			    }
 			    else {
@@ -825,38 +874,52 @@ for (var i = 1; i < 20; i++) {
                         <div class="col-md-6 col-xs-12">
                             <p>In mathematics,<a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank"> Fibonacci Sequence</a> is an integer sequence in which each number in the sequence is the sum of the previous two.  By definition, the sequence begins with 1.  This program will display all fibonacci numbers up to the number given by the user.</p>
                             <label>Enter a number:</label><input class="userinput" type="number" id="fib1" required>
-                            <input type="button" class="funcbtn" value="Run!" onclick="fibonacci();">
+                            <input type="button" class="funcbtn" id="showfib" value="Run!">
+                            <input type="button" class="funcbtn" id="clearfib" value="Clear!">
                             <div class="jsdisplay" id="printfib"></div>
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <pre class="brush:js">
-function fibonacci() {
-var userInput = parseInt(document.getElementById("fib1").value);
-	if {
-	var a = 1;
-	var b = 0;
-	var c = a + b;
-	var arr = [];
-		for(i=1; c < userInput; ) {		
-			c = a + b;
-			if(c >= userInput) {
-					break;
-				}
-				arr.push(c);
-				document.getElementById("printfib").innerHTML = 
-                arr.join(" ");
-				a=b;
-				b=c;
-				
-		}
-	}
-}
+$("#showfib").on("click", function () {
+    var userInput = parseInt($("#fib1").val());
+    if (isNaN(userInput)){
+        $("#printfib").text("Please enter a number!").show();
+        $("#printfib").addClass("error");
+    }
+    else if (userInput <= 0) {
+        $("#printfib").text("Please enter a positive number!").show();
+        $("#printfib").addClass("error");
+    }
+    else{
+        var a = 1;
+        var b = 0;
+        var c = a + b;
+        var arr = [];
+        for (i = 1; c < userInput;) {
+            c = a + b;
+            if (c >= userInput) {
+                break;
+            }
+            arr.push(c);
+            $("#printfib").removeClass("error");
+            $("#printfib").text(arr.join(" ")).show();
+            $()
+            a = b;
+            b = c;
+        }
+    }
+});
+$("#clearfib").on("click", function () {
+    $("#printfib").hide();
+    $("#fib1").val(" ");
+});
                             </pre>
                         </div>
                     </div>
                     <div class="clearfixed"></div>
                     <div class="modal-footer no-margin">
                         <ul>
+                            <li><img src="img/prog-jquery.png" /></li>
                             <li><img src="img/prog-js01.png" /> </li>
                             <li><img src="img/html5-02.png" /> </li>
                             <li><img src="img/css3-02.png" /> </li>
