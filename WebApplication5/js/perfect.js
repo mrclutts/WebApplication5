@@ -52,6 +52,10 @@ $(document).ready(function(){
         $("#showper").hide();
         $("#per1").val(" ");
     });
+    $(".close").on("click", function () {
+        $("#showper").hide();
+        $("#per1").val(" ");
+    });
    
 $("#printper").on("click", function () {
    

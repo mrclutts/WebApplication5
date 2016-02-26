@@ -32,6 +32,10 @@ $(document).ready(function () {
         $("#printfib").hide();
         $("#fib1").val(" ");
     });
+    $(".close").on("click", function () {
+        $("#printfib").hide();
+        $("#fib1").val(" ");
+    });
 });
 
 

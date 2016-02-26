@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/jquery.jqpuzzle.css" rel="stylesheet" />
+    <!--<script type="text/javascript" src="jquery.jqpuzzle.js"></script>-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.jqpuzzle.full.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("#petey").jqPuzzle( {
+      
+                shuffle: true, 
+                control: { 
+                    shufflePieces: true, 
+                    toggleNumbers: true, 
+                    toggleOriginal: true, 
+                    counter: false, 
+                    timer: true 
+                }, 
+                style: { 
+                    gridSize: 0, 
+                    overlap: false, 
+                    backgroundOpacity: 0 
+                } 
+            }); 
+        }); 
+    </script>
+</head>
+<body>
+    <input type="button" class="funcbtn" value=" Start Puzzle!" id="puzzle">
+    <center><img id="petey" src="img/rsz_petey1.jpg" /></center>
+</body>
+</html>

@@ -32,4 +32,8 @@ $(document).ready(function () {
         $("#printpali").hide();
         $("#pali1").val(" ");
     });
+    $(".close").on("click", function () {
+        $("#printpali").hide();
+        $("#pali1").val(" ");
+    });
 });

@@ -1,43 +1,43 @@
-function primeNo() {
-var userInput = parseInt(document.getElementById("prime1").value);
-var vali = validatePrime(userInput);
-var posi = positivePrime(userInput);
+$(document).ready(function () {
+    $("#getprime").on("click", function () {
+        var userInput = parseInt($("#prime1").val());
+        console.log(userInput);
 
-	if (!vali) {
-		document.getElementById("printprime").innerHTML = "Please enter a number!"
-	}
-	else if (!posi) {
-		document.getElementById("printprime").innerHTML = "Please enter a positive number great than 1."
-	}
-	else {
-	var arr = [];
-	for (a=2; a<=userInput; a++) {
-		var prime = true;
-		
-		for (b=2; b < a; b++) {
-			if(a % b === 0)
-			{
-				prime = false;
-			}
-		}
-		if (prime) {
-			arr.push(a);
-		}
-	}
+        if (isNaN(userInput)) {
+            $("#printprime").addClass("error");
+            $("#printprime").text("Please enter a number!").show();
+        }
+        else if (userInput <= 0) {
+            $("#printprime").addClass("error");
+            $("#printprime").text("Please enter a positive number great than 1.").show();
+        }
+        else {
+            var arr = [];
+            for (a = 2; a <= userInput; a++) {
+                var prime = true;
 
-		document.getElementById("printprime").innerHTML = arr.join(" ");
-	}	
-}
+                for (b = 2; b < a; b++) {
+                    if (a % b === 0) {
+                        prime = false;
+                    }
+                }
+                if (prime) {
+                    arr.push(a);
+                }
+            }
+            $("#printprime").removeClass("error");
+            $("#printprime").addClass("jsdisplay");
+            $("#printprime").append(arr.join(" ")).show();
+        }
+    });
+    $("#clearprime").on("click", function () {
+        $("#printprime").hide();
+        $("#prime1").val(" ");
 
-function validatePrime(num1) {
-	if (isNaN(num1)) 
-		return false;
-	else 
-		return true;
-}
-function positivePrime(num1) {
-	if (num1 <=1)
-		return false
-	else
-		return true
-}
+    });
+    $(".close").on("click", function () {
+        $("#printprime").hide();
+        $("#prime1").val(" ");
+
+    });
+});

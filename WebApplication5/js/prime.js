@@ -35,4 +35,9 @@ $(document).ready(function () {
         $("#prime1").val(" ");
 
     });
+    $(".close").on("click", function () {
+        $("#printprime").hide();
+        $("#prime1").val(" ");
+
+    });
 });

@@ -194,6 +194,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\calcstyle.css" />
     <Content Include="css\grayscale.css" />
+    <Content Include="css\jquery.jqpuzzle.css" />
     <Content Include="favicon.ico" />
     <Content Include="font-awesome\css\font-awesome.css" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
@@ -226,6 +227,7 @@
     <Content Include="img\nautilus_sectionfibonacci.jpg" />
     <Content Include="img\Optimized-8-3-15 017.JPG" />
     <Content Include="img\perfect number mountainv2.png" />
+    <Content Include="img\Petey1.JPG" />
     <Content Include="img\pisland_agoodlook.jpg" />
     <Content Include="img\Placeholder 150x150.png" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
@@ -234,7 +236,10 @@
     <Content Include="img\prime.jpg" />
     <Content Include="img\prog-jquery.png" />
     <Content Include="img\prog-js01.png" />
+    <Content Include="img\puzzles.jpg" />
+    <Content Include="img\rsz_1petey1.png" />
     <Content Include="img\rsz_mattbrewery.png" />
+    <Content Include="img\rsz_petey1.jpg" />
     <Content Include="img\rus-vk-01.png" />
     <Content Include="img\sheepfactorial.png" />
     <Content Include="img\soccer19.png" />
@@ -252,13 +257,20 @@
     <Content Include="js\fizzbuzz.js" />
     <Content Include="js\grayscale.js" />
     <Content Include="js\happynumbers.js" />
+    <Content Include="js\jquery-1.12.0.min.js" />
+    <Content Include="js\jquery-2.2.0.min.js" />
     <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.jqpuzzle.full.js" />
+    <Content Include="js\jquery.jqpuzzle.min.js" />
+    <Content Include="js\jquery.jqpuzzle.packed.js" />
     <Content Include="js\jquery.js" />
     <Content Include="img\Placeholder 250x250.png" />
     <Content Include="js\palindrome.js" />
     <Content Include="js\perfect.js" />
     <Content Include="js\prime.js" />
+    <Content Include="js\puzzle.js" />
     <Content Include="js\temp.js" />
+    <Content Include="Puzzle Test.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />

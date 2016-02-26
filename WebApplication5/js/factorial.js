@@ -28,5 +28,10 @@ $(document).ready(function(){
         $("#fac1").val(" ");
 
     });
+    $(".close").on("click", function () {
+        $("#showfac").hide();
+        $("#fac1").val(" ");
+
+    });
 });
 

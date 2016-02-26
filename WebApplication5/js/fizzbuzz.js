@@ -43,4 +43,9 @@ $("#clearfb").on("click", function () {
     $("#fb1").val(" ");
     $("#fb2").val(" ");
 });
+$(".close").on("click", function () {
+    $("#showfb").empty();
+    $("#fb1").val(" ");
+    $("#fb2").val(" ");
+});
 });

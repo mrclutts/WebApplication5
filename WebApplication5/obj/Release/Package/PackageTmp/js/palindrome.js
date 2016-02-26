@@ -1,28 +1,39 @@
-function palindrome()
-{
-    var userInput = document.getElementById('pali1').value;
-   
-    var vali = validatePali(userInput);
-    
-	if (vali) {
-		document.getElementById("showpali").innerHTML = "Please enter a word, phrase, or number.";
-	} 
-	else {
-	var str = userInput.toUpperCase().replace(/\s+/g, '');
-	strRev = str.split('').reverse().join('');
-		if (str == strRev) {
-			document.getElementById("showpali").innerHTML = "Yes, " + userInput + " is a Palindrome!";
-		}
-		else {
-			document.getElementById("showpali").innerHTML = "No, " + userInput + " is not a Palindrome!";
-		}
-	}
-}
-function validatePali(userInput) {
-
-    if (userInput == '' || userInput == ' ' || userInput == '  ')
-       
-        return true;
-    else
-        return false;
-}
+$(document).ready(function () {
+    $("#checkpali").on("click", function(){
+        var userInput = $('#pali1').val();
+        if (userInput == "") {
+            $("#printpali").addClass("error");
+            $("#printpali").text("Please enter a word, phrase, or number.").show();
+        }
+        else if (userInput == " ") {
+            $("#printpali").addClass("error");
+            $("#printpali").text("Please enter a word, phrase, or number.").show();
+        }
+        else {
+            var str = userInput.toUpperCase().replace(/\s+/g, '');
+            var strRev = str.split('').reverse().join('');
+                if (str == strRev) {
+                    $("#printpali").removeClass("error");
+                    $("#printpali").addClass("jsdisplay");
+                    $("#printpali").text("Yes, ").show();
+                    $("#printpali").append("<span class='userinputdisplay'>" + userInput + "</span>");
+                    $("#printpali").append(" is a Palindrome!").show();
+                }
+                else {
+                    $("#printpali").removeClass("error");
+                    $("#printpali").addClass("jsdisplay");
+                    $("#printpali").text("No, ").show();
+                    $("#printpali").append("<span class='error'>" + userInput + "</span>");
+                    $("#printpali").append(" is not a Palindrome!").show();
+                }
+        }
+    });
+    $("#clearpali").on("click", function () {
+        $("#printpali").hide();
+        $("#pali1").val(" ");
+    });
+    $(".close").on("click", function () {
+        $("#printpali").hide();
+        $("#pali1").val(" ");
+    });
+});

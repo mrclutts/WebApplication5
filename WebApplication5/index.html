@@ -20,11 +20,21 @@
     <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
     <link href="Content/SyntaxHighlighter/shThemeFadeToGrey.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="img/web2.png">
-   
+    <link href="css/jquery.jqpuzzle.css" rel="stylesheet" />
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -100,7 +110,7 @@
         <div class="row">
             <div class="col-md-12 col-xs-12">
                 <h2>About Me</h2>
-                <p><img src="img/rsz_mattbrewery.png" /></p>
+                <p><img src="img/Optimized-8-3-15 017.JPG" /></p>
             </div>
         </div>
         <div class="row">
@@ -252,6 +262,8 @@
                     <span class="info"><span>Temperature Converter</span></span>
                 </a>
             </div>-->
+           
+            
             <div class="row">
                 <a href="#music" class="btn btn-circle page-scroll">
                     <i class="fa fa-angle-double-down animated"></i>
@@ -291,6 +303,7 @@
                         <img src="img/pisland_agoodlook.jpg" class="imgmusic" />
                         <span class="info"><span>Private Island - <em>A Good Look</em></span></span>
                     </a>
+                </div>
                 </div>
                 <div class="row">
                 <div class="col-lg-3 col-md-6 col-xs-12">
@@ -400,10 +413,6 @@ $("#getprime").on("click", function () {
         $("#printprime").removeClass("error");
         $("#printprime").addClass("jsdisplay");
         $("#printprime").append(arr.join(" ")).show();
-});
-$("#clearprime").on("click", function () {
-    $("#printprime").hide();
-    $("#prime1").val(" ");
 });
 
                     </pre>
@@ -517,10 +526,6 @@ $("#checkper").on("click", function(){
         }		
     }	
 });
-$("#clearper").on("click", function () {
-    $("#showper").hide();
-    $("#per1").val(" ");
-});
 $("#printper").on("click", function () {
     $(this).attr("disabled", "disabled");
         for (var i = 1; i < 10000; i++) {
@@ -596,12 +601,7 @@ $("#checkpali").on("click", function(){
                 $("#printpali").append("<span class='error'>" + userInput + "</span>");
                 $("#printpali").append(" is not a Palindrome!").show();
             }
-    }
-});
-    $("#clearpali").on("click", function () {
-        $("#printpali").hide();
-        $("#pali1").val(" ");
-    });
+        }
 });
                         </pre>
                         </div>
@@ -661,11 +661,7 @@ $("#facbtn").on("click", function(){
     }
 	}
 });
-$("#clearfac").on("click", function() {
-        $("#showfac").hide();
-        $("#fac1").val(" ");
-    });
-});
+
 
                             </pre>
                         </div>
@@ -730,11 +726,7 @@ $("#getfb").on("click", function () {
             }
         }
 });
-$("#clearfb").on("click", function () {
-    $("#showfb").empty();
-    $("#fb1").val(" ");
-    $("#fb2").val(" ");
-});
+
                             </pre>
                         </div>
                     </div>
@@ -909,10 +901,6 @@ $("#showfib").on("click", function () {
         }
     }
 });
-$("#clearfib").on("click", function () {
-    $("#printfib").hide();
-    $("#fib1").val(" ");
-});
                             </pre>
                         </div>
                     </div>
@@ -977,14 +965,9 @@ function celsius() {
                 </div>
             </div>
         </div>-->
+        
     </section>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <!-- Custom Theme JavaScript -->
+   
     <script src="js/temp.js"></script>
     <script src="js/fibonacci.js"></script>
     <script src="js/happynumbers.js"></script>

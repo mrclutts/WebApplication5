@@ -14,7 +14,7 @@ for (var i = 1; i <20; i++) {
 		}
 		var result = c + d;
 			if (result === 1) {
-			    document.getElementById("showhappy").innerHTML += " The number " + i + " is a Happy Number.";
+			    document.getElementById("showhappy").innerHTML += i + " ";
 				break;
 			}
 			else {
