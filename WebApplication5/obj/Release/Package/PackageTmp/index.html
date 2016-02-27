@@ -34,7 +34,9 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <!-- Custom Theme JavaScript -->
-
+    <script src="Scripts/jquery-ui-1.11.4.js"></script>
+    <!--AngularJS-->
+    <script src="Scripts/angular.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -110,7 +112,7 @@
         <div class="row">
             <div class="col-md-12 col-xs-12">
                 <h2>About Me</h2>
-                <p><img src="img/Optimized-8-3-15 017.JPG" /></p>
+                <p><img src="img/me.jpg" style="height:300px; width:400px;"/></p>
             </div>
         </div>
         <div class="row">
@@ -186,90 +188,112 @@
                 <div class="col-md-12 col-xs-12 text-center">
                     <h2>Portfolio</h2>
                     <hr />
+                    <ul id="filterOptions">
+                        <li class="active"><a href="#" class="javaScript"><span>JavaScript</span></a></li>
+                        <li><a href="#" class="jQuery"><span>jQuery</span></a></li>
+                        <li><a href="#" class="angular"><span>AngularJS</span></a></li>
+                        <li><a href="#" class="allWork"><span>All</span></a></li>
+                    </ul>
                 </div>
             </div>
-            <!--Calculator-->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal8">
-                    <img src="img/jscalc.PNG" class="imgmusic"/>
-                    <span class="info"><span>JS Calculator</span></span>
-                </a>
-            </div>
-            <!---Modal Prime--->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal1">
-                    <img src="img/prime.jpg" class="imgmusic"/>
-                    <span class="info">
-                        <span>Prime Numbers</span></span>    
-                </a>
-            </div>
-
-
-            <!---Modal Armstrong Numbers-->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal2">
-                    <img src="img/Armstrong_with.png" class="imgmusic"/>
-                    <span class="info"><span>Armstrong Numbers</span></span>         
-                </a>
-            </div>
-
-            <!---Modal Perfect Numbers-->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal3">
-                    <img src="img/perfect number mountainv2.png" class="imgmusic"/>
-                    <span class="info"><span>Perfect Numbers</span></span>
-                </a>
-            </div>
-            <!--Happy Numbers-->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal7">
-                    <img src="img/happy_sadnumber.png" class="imgmusic" />
-                    <span class="info"><span>Happy Numbers</span></span>
-                </a>
-            </div>           
-            <!--Modal Palindrome-->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal4">
-                    <img src="img/evilolive.jpg" class="imgmusic"/>
-                    <span class="info"><span>Palindrome</span></span>              
-                </a>
-            </div>
-            <!--Modal Factorial-->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal5">
-                    <img src="img/sheepfactorial.png" class="imgmusic"/>
-                    <span class="info"><span>Factorial</span></span>
-                </a>
-            </div>
-            <!--Modal FizzBuzz-->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal6">
-                    <img src="img/fizzbuzz.jpg" class="imgmusic"/>
-                    <span class="info"><span>FizzBuzz</span></span>
-                </a>
-            </div>
-            <!--Modal Fibonacci-->
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal9">
-                    <img src="img/nautilus_sectionfibonacci.jpg" class="imgmusic" />
-                    <span class="info"><span>Fibonacci Sequence</span></span>
-                </a>
-            </div>
-            <!--Modal Temp Converter
-            <div class="col-md-4 col-xs-12 portfolio-item">
-                <a href="" class="modalhov" data-toggle="modal" data-target="#modal10">
-                    <img src="img/Placeholder 150x150.png" class="imgmusic" />
-                    <span class="info"><span>Temperature Converter</span></span>
-                </a>
-            </div>-->
-           
             
-            <div class="row">
-                <a href="#music" class="btn btn-circle page-scroll">
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
-            </div>
+
+            <!--Calculator-->
+            <div class="portfolioHolder">
+                <div class="col-md-4 col-xs-12 portfolio-item javaScript">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal8">
+                        <img src="img/jscalc.PNG" class="imgmusic" />
+                        <span class="info"><span>JS Calculator<br /><img src="img/Icons/prog-js02.png" /></span></span>
+                    </a>
+                </div>
+                <!---Modal Prime--->
+                <div class="col-md-4 col-xs-12 portfolio-item jQuery">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal1">
+                        <img src="img/prime.jpg" class="imgmusic" />
+                        <span class="info">
+                            <span>Prime Numbers<br /><img src="img/Icons/prog-jquery.png" /></span></span>
+                    </a>
+                </div>
+
+
+                <!---Modal Armstrong Numbers-->
+                <div class="col-md-4 col-xs-12 portfolio-item javaScript">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal2">
+                        <img src="img/Armstrong_with.png" class="imgmusic" />
+                        <span class="info"><span>Armstrong Numbers <br /><img src="img/Icons/prog-js02.png" /></span></span>
+                    </a>
+                </div>
+
+                <!---Modal Perfect Numbers-->
+                <div class="col-md-4 col-xs-12 portfolio-item jQuery">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal3">
+                        <img src="img/perfect number mountainv2.png" class="imgmusic" />
+                        <span class="info"><span>Perfect Numbers<br /><img src="img/Icons/prog-jquery.png" /></span></span>
+                    </a>
+                </div>
+                <!--Happy Numbers-->
+                <div class="col-md-4 col-xs-12 portfolio-item javaScript">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal7">
+                        <img src="img/happy_sadnumber.png" class="imgmusic" />
+                        <span class="info"><span>Happy Numbers<br /><img src="img/Icons/prog-js02.png" /></span></span>
+                    </a>
+                </div>
+                <!--Modal Palindrome-->
+                <div class="col-md-4 col-xs-12 portfolio-item jQuery">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal4">
+                        <img src="img/evilolive.jpg" class="imgmusic" />
+                        <span class="info"><span>Palindrome<br /><img src="img/Icons/prog-jquery.png" /></span></span>
+                    </a>
+                </div>
+                <!--Modal Factorial-->
+                <div class="col-md-4 col-xs-12 portfolio-item jQuery">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal5">
+                        <img src="img/sheepfactorial.png" class="imgmusic" />
+                        <span class="info"><span>Factorial<br /><img src="img/Icons/prog-jquery.png" /></span></span>
+                    </a>
+                </div>
+                <!--Modal FizzBuzz-->
+                <div class="col-md-4 col-xs-12 portfolio-item jQuery">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal6">
+                        <img src="img/fizzbuzz.jpg" class="imgmusic" />
+                        <span class="info"><span>FizzBuzz<br /><img src="img/Icons/prog-jquery.png" /></span></span>
+                    </a>
+                </div>
+                <!--Modal Fibonacci-->
+                <div class="col-md-4 col-xs-12 portfolio-item jQuery">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal9">
+                        <img src="img/nautilus_sectionfibonacci.jpg" class="imgmusic" />
+                        <span class="info"><span>Fibonacci Sequence<br /><img src="img/Icons/prog-jquery.png" /></span></span>
+                    </a>
+                </div>
+                <!--Modal Temp Converter-->
+                <div class="col-md-4 col-xs-12 portfolio-item javaScript">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal10">
+                        <img src="img/TempConverterV1purple.png" class="imgmusic" />
+                        <span class="info"><span>Temperature Converter<br /><img src="img/Icons/prog-js02.png" /></span></span>
+                    </a>
+                </div>
+                <!--Link to Car Finder-->
+                <div class="col-md-4 col-xs-12 portfolio-item angular">
+                    <a href="http://mclutts-cars.azurewebsites.net/" target="_blank" class="modalhov">
+                        <img src="img/Placeholder 150x150.png" class="imgmusic" />
+                        <span class="info"><span>Car Finder App<br /><img src="img/Icons/angularjs.png" /></span></span>
+                    </a>
+                </div>
+                <!--8 Ball Modal-->
+                <div class="col-md-4 col-xs-12 portfolio-item angular">
+                    <a href="" class="modalhov" data-toggle="modal" data-target="#modal11">
+                        <img src="img/Placeholder 150x150.png" class="imgmusic" />
+                        <span class="info"><span>Magic 8 Ball<br /><img src="img/Icons/angularjs.png" /></span></span>
+                    </a>
+                </div>
+            </div>   
        </div>
+        <div class="row portScroll">
+            <a href="#music" class="btn btn-circle page-scroll ">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
     </section>
 
     <!---What I'm Listening to-->
@@ -295,7 +319,7 @@
                 <div class="col-lg-3 col-md-6 col-xs-12">
                     <a href="https://megamart.subpop.com/releases/fleet_foxes/helplessness_blues" class="artist" target="_blank">
                         <img src="img/fleetfoxes_helplessnessblues.jpg" class="imgmusic" />
-                        <span class="info"><span>Fleet Foxes - <em>Helplessness <br />Blues</em></span></span>
+                        <span class="info"><span>Fleet Foxes - <br /><em>Helplessness Blues</em></span></span>
                     </a>
                  </div>
                 <div class="col-lg-3 col-md-6 col-xs-12">
@@ -917,7 +941,7 @@ $("#showfib").on("click", function () {
                 </div>
             </div>
         </div>
-        <!--Temp Converter
+        <!--Temp Converter-->
         <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-lg">
                 <div class="modal-content">
@@ -964,10 +988,44 @@ function celsius() {
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
+        <!--Temp Converter-->
+        <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="modal-title" id="myModalLabel">Magic 8 Ball</h1>
+                    </div>
+                    <div class="modal-body text-center" ng-app="myModule" ng-controller="myController">
+                        <div class="col-md-12 col-xs-12">
+                            <div>ASK ME A QUESTION!</div>
+                            <input type="text" id="question" class="userinput" /><input type="button" class="funcbtn" id="eightClick" value="Click!" ng-click="magic(); setDelay()" onclick="question.value = ''" /><br /><br />
+                            <div id="eightball"><input type="button" value="8" id="eightbtn" ng-click="magic(); setDelay()" onclick="question.value = ''" /> </div>
+                            <div id="delay" ng-show="delay">I'm thinking...Patience....</div>
+                            <div id="eightResult" ng-show="!delay">{{ result }}</div>
+                        </div>
+
+                    </div>
+                    <div class="clearfixed"></div>
+                    <div class="modal-footer no-margin">
+                        <ul>
+                            <li><img src="img/angularjs.png" /></li>
+                            <li><img src="img/prog-jquery.png" /></li>
+                            <li><img src="img/prog-js01.png" /> </li>
+                            <li><img src="img/html5-02.png" /> </li>
+                            <li><img src="img/css3-02.png" /> </li>
+                            <li><img src="img/rus-vk-01.png" /> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </section>
-   
+    <script src="js/eightBallJQuery.js"></script>
+    <script src="js/eightBall.js"></script>
+    <script src="js/portfolio.js"></script>
     <script src="js/temp.js"></script>
     <script src="js/fibonacci.js"></script>
     <script src="js/happynumbers.js"></script>
