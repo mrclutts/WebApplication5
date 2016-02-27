@@ -242,8 +242,11 @@
     <Content Include="img\Armstrong_with.png" />
     <Content Include="img\bostonbackground.jpg" />
     <Content Include="img\budget2.png" />
+    <Content Include="img\car find app red.png" />
     <Content Include="img\computer12.png" />
+    <Content Include="img\Concrete Magic8 Ball.png" />
     <Content Include="img\css3-02.png" />
+    <Content Include="img\detective.PNG" />
     <Content Include="img\downloads-bg.jpg" />
     <Content Include="img\evilolive.jpg" />
     <Content Include="img\fibonacci.jpeg" />
@@ -256,10 +259,13 @@
     <Content Include="img\Icons\angularjs.png" />
     <Content Include="img\Icons\prog-jquery.png" />
     <Content Include="img\Icons\prog-js02.png" />
+    <Content Include="img\IMG_0405.PNG" />
     <Content Include="img\intro-bg.jpg" />
     <Content Include="img\jscalc.PNG" />
     <Content Include="img\JSCalculator.png" />
     <Content Include="img\map-marker.png" />
+    <Content Include="img\Mattcontact far left.png" />
+    <Content Include="img\Mattcontact middle.png" />
     <Content Include="img\me.jpg" />
     <Content Include="img\mymorningjacket_z.jpg" />
     <Content Include="img\nautilus_sectionfibonacci.jpg" />
@@ -269,6 +275,8 @@
     <Content Include="img\pisland_agoodlook.jpg" />
     <Content Include="img\Placeholder 150x150.png" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="img\rsz_1me.jpg" />
+    <Content Include="img\rsz_1me.png" />
     <Content Include="js\eightBallJQuery.js" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />

@@ -47,7 +47,18 @@ p {
         align-content:center;
     }
 }
-
+@media all and (min-width: 601px) {
+    #contact {
+        background-image: url('../img/Mattcontact far left.png');
+        background-size:cover;
+    }
+}
+@media all and (max-width: 600px) {
+    #contact {
+        max-width: 100%;
+        background-color: #EE9A1E;
+    }
+}
 
 
 
@@ -514,16 +525,18 @@ img::-moz-selection {
     background-color: #ffffff;
     color: #000000;
     font-weight: bold;
-    padding: 20px 25px;
+    padding: 10px 20px;
     border-radius: 100%;
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 26px;
     outline:none;
     box-shadow: 0 0 30px #000000;
     
 }
 
-
+#about img {
+    margin:0 auto;
+}
 
 
     /*What I'm Listening To and Modal Hover Effect*/
@@ -610,13 +623,21 @@ img::-moz-selection {
 
 
 /*Contact*/
- #contact {
-
- }
+#contact {
+   
+    height: 900px;
+}
  #contact .btn {
      margin-top: 50px;
      padding: 10px 20px;
      font-size: 16px;
+     color: #000000;
+     border: 1px solid #000000;
+
+ }
+ #contact .btn:hover {
+     color: #B7FEFE;
+     background-color:#70419A;
  }
 
  /* Footer */
@@ -659,7 +680,7 @@ img::-moz-selection {
 }
 #modals .userinput {
     color: #000000;
-    width: 350px;
+    min-width: 200px;
     outline: none;
     
 }
